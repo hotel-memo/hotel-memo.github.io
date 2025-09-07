@@ -7,7 +7,7 @@
 - 利用人数: 1～2名
 - 喫煙/禁煙: 禁煙
 - 設備: リクライニング機能付きワークチェア、加湿空気清浄機 ほか
-- 参照元: https://www.hotelmets.jp/koenji/room/ （取得日: 2025-09-07）
+- 参照元: https://www.hotelmets.jp/koenji/stay.html （取得日: 2025-09-07）
 
 ## 部屋タイプ
 Single (Biz style)
