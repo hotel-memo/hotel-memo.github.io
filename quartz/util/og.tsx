@@ -14,7 +14,40 @@ import { styleText } from "util"
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
 
-export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: FontSpecification) {
+const getLocaleFallbackFontNames = (locale?: string): string[] => {
+  if (!locale) {
+    return []
+  }
+
+  const normalizedLocale = locale.toLowerCase()
+
+  if (normalizedLocale.startsWith("ja")) {
+    return ["Noto Sans JP"]
+  }
+
+  return []
+}
+
+const formatFontFamily = (fontName: string): string =>
+  fontName.includes(" ") ? `'${fontName}'` : fontName
+
+const buildFontStack = (primaryFont: string, fallbackFonts: string[]): string => {
+  const orderedFonts = [primaryFont]
+
+  for (const fallback of fallbackFonts) {
+    if (!orderedFonts.includes(fallback)) {
+      orderedFonts.push(fallback)
+    }
+  }
+
+  return orderedFonts.map(formatFontFamily).join(", ")
+}
+
+export async function getSatoriFonts(
+  headerFont: FontSpecification,
+  bodyFont: FontSpecification,
+  locale?: string,
+) {
   // Get all weights for header and body fonts
   const headerWeights: FontWeight[] = (
     typeof headerFont === "string"
@@ -28,39 +61,48 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
   const headerFontName = typeof headerFont === "string" ? headerFont : headerFont.name
   const bodyFontName = typeof bodyFont === "string" ? bodyFont : bodyFont.name
 
-  // Fetch fonts for all weights and convert to satori format in one go
-  const headerFontPromises = headerWeights.map(async (weight) => {
-    const data = await fetchTtf(headerFontName, weight)
-    if (!data) return null
-    return {
-      name: headerFontName,
-      data,
-      weight,
-      style: "normal" as const,
-    }
-  })
+  const loadFontsForWeights = async (fontName: string, weights: FontWeight[]) => {
+    const promises = weights.map(async (weight) => {
+      const data = await fetchTtf(fontName, weight)
+      if (!data) return null
+      return {
+        name: fontName,
+        data,
+        weight,
+        style: "normal" as const,
+      }
+    })
 
-  const bodyFontPromises = bodyWeights.map(async (weight) => {
-    const data = await fetchTtf(bodyFontName, weight)
-    if (!data) return null
-    return {
-      name: bodyFontName,
-      data,
-      weight,
-      style: "normal" as const,
-    }
-  })
+    const loadedFonts = await Promise.all(promises)
+    return loadedFonts.filter((font): font is NonNullable<typeof font> => font !== null)
+  }
 
   const [headerFonts, bodyFonts] = await Promise.all([
-    Promise.all(headerFontPromises),
-    Promise.all(bodyFontPromises),
+    loadFontsForWeights(headerFontName, headerWeights),
+    loadFontsForWeights(bodyFontName, bodyWeights),
   ])
 
-  // Filter out any failed fetches and combine header and body fonts
-  const fonts: SatoriOptions["fonts"] = [
-    ...headerFonts.filter((font): font is NonNullable<typeof font> => font !== null),
-    ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
-  ]
+  const fonts: SatoriOptions["fonts"] = [...headerFonts, ...bodyFonts]
+
+  if (locale?.toLowerCase().startsWith("ja")) {
+    const fallbackFontName = "Noto Sans JP"
+    const fallbackWeightsSet = new Set<FontWeight>()
+
+    for (const weight of headerWeights) {
+      fallbackWeightsSet.add(weight)
+    }
+    for (const weight of bodyWeights) {
+      fallbackWeightsSet.add(weight)
+    }
+    fallbackWeightsSet.add(400 as FontWeight)
+    fallbackWeightsSet.add(700 as FontWeight)
+
+    if (headerFontName !== fallbackFontName || bodyFontName !== fallbackFontName) {
+      const fallbackWeights = Array.from(fallbackWeightsSet)
+      const fallbackFonts = await loadFontsForWeights(fallbackFontName, fallbackWeights)
+      fonts.push(...fallbackFonts)
+    }
+  }
 
   return fonts
 }
@@ -197,6 +239,9 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
   const tags = fileData.frontmatter?.tags ?? []
   const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
   const headerFont = getFontSpecificationName(cfg.theme.typography.header)
+  const fallbackFontNames = getLocaleFallbackFontNames(cfg.locale)
+  const bodyFontStack = buildFontStack(bodyFont, fallbackFontNames)
+  const headerFontStack = buildFontStack(headerFont, fallbackFontNames)
 
   return (
     <div
@@ -207,7 +252,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         width: "100%",
         backgroundColor: cfg.theme.colors[colorScheme].light,
         padding: "2.5rem",
-        fontFamily: bodyFont,
+        fontFamily: bodyFontStack,
       }}
     >
       {/* Header Section */}
@@ -234,7 +279,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             display: "flex",
             fontSize: 32,
             color: cfg.theme.colors[colorScheme].gray,
-            fontFamily: bodyFont,
+            fontFamily: bodyFontStack,
           }}
         >
           {cfg.baseUrl}
@@ -253,7 +298,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
           style={{
             margin: 0,
             fontSize: useSmallerFont ? 64 : 72,
-            fontFamily: headerFont,
+            fontFamily: headerFontStack,
             fontWeight: 700,
             color: cfg.theme.colors[colorScheme].dark,
             lineHeight: 1.2,
