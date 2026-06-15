@@ -1,49 +1,29 @@
-# Makefile for Hotel Memo Quartz site
+# Makefile for hotel-memo Astro site
 
-# Obsidianのpublishフォルダのパス
-OBSIDIAN_PATH := /Users/mizzy/obsidian/hotel-memo/publish
+.PHONY: dev build preview sync publish clean
 
-# ローカルでビルドとサーブ
-serve: sync
-	npx quartz build --serve
+dev:
+	npm run dev
 
-# ビルドのみ
-build: sync
-	npx quartz build
+build:
+	npm run build
 
-# Obsidianからコンテンツを同期
+preview:
+	npm run preview
+
+# 本拠地リポジトリ (content/hotel-memo submodule) を最新の main に追従させる。
 sync:
-	@echo "Syncing content from Obsidian vault..."
-	@rm -rf content
-	@cp -r $(OBSIDIAN_PATH) content
-	@echo "Content synced successfully"
+	git submodule update --remote content/hotel-memo
 
-# コンテンツを同期してGitにコミット・プッシュ
+# sync して、submodule の pointer 更新をコミット & push。
 publish: sync
-	@echo "Publishing to GitHub..."
-	git add content/
-	git diff --staged --quiet || git commit -m "Update content from Obsidian vault"
-	git push origin main
-	@echo "Published successfully"
+	@if git diff --quiet content/hotel-memo; then \
+		echo "No upstream changes."; \
+	else \
+		git add content/hotel-memo; \
+		git commit -m "Update content submodule"; \
+		git push; \
+	fi
 
-# 開発用：同期してビルドしてサーブ
-dev: sync
-	npx quartz build --serve
-
-# クリーンアップ
 clean:
-	rm -rf public
-	rm -rf content
-
-# ヘルプ
-help:
-	@echo "Available commands:"
-	@echo "  make sync    - Sync content from Obsidian"
-	@echo "  make build   - Sync and build the site"
-	@echo "  make serve   - Sync and serve locally"
-	@echo "  make publish - Sync, commit, and push to GitHub"
-	@echo "  make dev     - Alias for serve"
-	@echo "  make clean   - Clean build artifacts"
-	@echo "  make help    - Show this help"
-
-.PHONY: serve build sync publish dev clean help
+	rm -rf dist .astro

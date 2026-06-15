@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content"
+import Base from "../layouts/Base.astro"
+import { byRatingDesc, byStayedAtDesc, memoSlug } from "../lib/memo"
+
+const memos = (await getCollection("memos")).filter((m) => !m.data.draft)
+const workchair = (await getCollection("workchair")).filter(
+  (w) =>
+    !w.data.draft &&
+    !w.id.endsWith("index") &&
+    /^ワークチェアがあるホテル\/\d+_/.test(w.id)
+)
+
+const stars = (n: number) => "★".repeat(n) + "☆".repeat(5 - n)
+const formatYM = (d: Date) =>
+  `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}`
+
+const ranked = [...memos].sort(byRatingDesc).slice(0, 8)
+const recent = memos
+  .filter((m) => m.data.stayed_at)
+  .sort(byStayedAtDesc)
+  .slice(0, 8)
+
+const regions = workchair
+  .map((w) => {
+    const name = w.id
+      .replace(/^ワークチェアがあるホテル\//, "")
+      .replace(/^\d+_/, "")
+    return { id: w.id, name }
+  })
+  .sort((a, b) => a.id.localeCompare(b.id))
+---
+
+<Base
+  title="Hotel Memo"
+  description="ワークチェアがあるホテルの情報と、実際に宿泊したホテルの記録"
+>
+  <section class="section">
+    <div class="section__head">
+      <h2>地域から探す</h2>
+      <a class="section__more" href="/ワークチェアがあるホテル/">一覧 →</a>
+    </div>
+    <div class="region-grid">
+      {regions.map((r) => <a href={`/${r.id}/`}>{r.name}</a>)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>パソコン作業の快適さランキング</h2>
+      <a class="section__more" href="/パソコン作業の快適さ評価/">全件 →</a>
+    </div>
+    <ul class="rank-list">
+      {
+        ranked.map((m) => (
+          <li>
+            <span class="stars" aria-label={`★${m.data.rating}`}>
+              {stars(m.data.rating)}
+            </span>
+            <span class="rank-title">
+              <a href={`/${memoSlug(m.id)}/`}>{m.data.title}</a>
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>最近の宿泊メモ</h2>
+    </div>
+    <ul class="recent-list">
+      {
+        recent.map((m) => (
+          <li>
+            <span class="recent-date">{formatYM(m.data.stayed_at!)}</span>
+            <span class="recent-title">
+              <a href={`/${memoSlug(m.id)}/`}>{m.data.title}</a>
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>

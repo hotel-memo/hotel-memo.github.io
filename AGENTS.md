@@ -1,38 +1,42 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
-- `content/` — Markdown notes and assets. Source of truth; synced from your Obsidian vault via `make sync`. Place images in `content/images/` and link relatively.
-- `quartz/` — Quartz v4 source and components. Customize UI/behavior here. Root configs: `quartz.config.ts`, `quartz.layout.ts`.
-- `public/` — Build output (generated). Don’t edit by hand.
-- `.github/workflows/` — CI/CD to GitHub Pages. Builds site and deploys `public/` on push to `main`.
-- `docs/` — Upstream docs; not used for production deploys.
-- `Makefile`, `Dockerfile` — Local workflows and containerized dev.
+## Project Structure
 
-## Build, Test, and Development Commands
-- Install: `npm ci` (Node 22; see `.node-version`).
-- Serve locally (auto-sync from Obsidian): `make serve` → http://localhost:8080.
-- Build static site: `make build` (outputs to `public/`).
-- Publish content only: `make publish` (syncs, commits “Update content from Obsidian vault”, pushes `main`).
-- Type/style check: `npm run check` (TypeScript + Prettier check).
-- Format: `npm run format`.
-- Direct Quartz: `npx quartz build --serve --watch`.
-- Docker: `docker build -t hotel-memo . && docker run -p 8080:8080 hotel-memo`.
+- `src/` — Astro のソース (`content.config.ts`, `layouts/`, `pages/`, `lib/`, `styles/`, `assets/`).
+- `content/hotel-memo/` — 本拠地リポジトリ `mizzy/hotel-memo` (private) の git submodule。サイトに載るのは `publish/` 配下のみ。
+- `public/` — 静的アセット (favicon, `images/` は `content/hotel-memo/publish/images` への symlink)。
+- `dist/` — ビルド出力 (.gitignore)。
+- `.github/workflows/deploy.yml` — main への push で GitHub Pages にデプロイ。
 
-## Coding Style & Naming Conventions
-- Language: TypeScript/TSX in `quartz/`; Markdown in `content/`.
-- Formatting: Prettier (`.prettierrc`), 2‑space indent. Run `npm run format` before PRs.
-- Content: use `.md`; prefer kebab‑case slugs; keep stable filenames. Put media under `content/images/`.
-- Frontmatter: include `title`, optional `tags`, and `draft: true` to hide pages.
+## Build, Test, and Development
 
-## Testing Guidelines
-- Run tests: `npm test` (tsx). Add tests for changes under `quartz/**`.
-- Naming: `*.test.ts` (example: `quartz/util/path.test.ts`). No strict coverage target; include focused unit tests where feasible.
+- Install: `npm ci` (Node 22, `.node-version`).
+- Dev: `npm run dev` → http://localhost:4321
+- Build: `npm run build` (Pagefind index も同時に作る)
+- Preview: `npm run preview`
+- Type check: `npm run check`
+- Content sync: `make sync` (submodule を本拠地 main に追従) / `make publish` (sync して pointer 更新を commit & push)
 
-## Commit & Pull Request Guidelines
-- Content syncs use: “Update content from Obsidian vault” (from `make publish`).
-- For code/config, prefer Conventional Commits: `feat:`, `fix:`, `docs:`, `chore:`, `ci:`.
-- PRs: describe intent, scope, and impact; link issues; include screenshots/GIFs for UI changes; note local test/build steps.
+## Coding Style
 
-## Security & Configuration Tips
-- Update `OBSIDIAN_PATH` in `Makefile` to your local vault before running `make sync` (it replaces `content/`).
-- `ignorePatterns` in `quartz.config.ts` excludes `private/`, `templates/`, and `.obsidian/` from publishing—still avoid committing secrets.
+- TypeScript / Astro / 素の CSS。
+- Prettier 設定はない (デフォルト 2 スペース、ダブルクオート)。
+- 不要なコメントを書かない。型と命名で説明する。
+- ライトモードのみ。
+
+## Content rules
+
+- 部屋メモ (`publish/宿泊メモ/{chain}/{hotel}/{room}.md`) には frontmatter `title` / `rating` / `stayed_at` を入れる。
+- `stayed_at` が不明なら省略 (ランキングには出るが「最近の宿泊メモ」には出ない)。
+- ホテル単位 index と地域カタログには frontmatter を入れない (本文の H1 を抽出して使う)。
+- 画像は本拠地の `publish/images/` 配下に置き、Markdown からは相対パス `../../../../images/...` で参照する。サイト側で `/images/...` に書き換えてる (remark plugin)。
+
+## Commit & PR
+
+- Conventional Commits: `feat:`, `fix:`, `docs:`, `chore:`, `ci:`.
+- PR は draft で作る (CLAUDE.md ルール)。
+- submodule pointer の更新は `chore: update content submodule` のような名前で単独 commit にする。
+
+## Secrets
+
+- `SUBMODULE_TOKEN`: 本拠地リポジトリ (private) を CI で clone するための PAT。`contents: read` 権限。

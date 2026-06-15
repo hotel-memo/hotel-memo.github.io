@@ -1,0 +1,93 @@
+---
+import { getCollection, render } from "astro:content"
+import Base from "../../layouts/Base.astro"
+import { byStayedAtDesc, extractH1, memoPathInfo } from "../../lib/memo"
+
+export async function getStaticPaths() {
+  const memos = await getCollection("memos")
+  const hotels = await getCollection("hotels")
+
+  const memoPaths = memos.map((entry) => ({
+    params: { slug: entry.id.replace(/^宿泊メモ\//, "") },
+    props: { entry, kind: "memo" as const },
+  }))
+
+  const hotelPaths = hotels.map((entry) => ({
+    params: { slug: entry.id.replace(/^宿泊メモ\//, "") },
+    props: { entry, kind: "hotel" as const },
+  }))
+
+  return [...memoPaths, ...hotelPaths]
+}
+
+const { entry, kind } = Astro.props
+const { Content } = await render(entry)
+
+const description =
+  kind === "memo"
+    ? `★${(entry as any).data.rating}/5 ${(entry as any).data.title}`
+    : undefined
+
+const memoPath = kind === "memo" ? memoPathInfo(entry.id) : null
+const fallbackTitle =
+  kind === "hotel" ? extractH1(entry.body) ?? entry.id : entry.id
+const title = entry.data.title ?? fallbackTitle
+
+// ホテルページなら配下の宿泊メモ一覧
+const hotelMemos =
+  kind === "hotel"
+    ? (await getCollection("memos"))
+        .filter((m) => m.id.startsWith(entry.id + "/"))
+        .sort(byStayedAtDesc)
+    : []
+
+const stars = (n: number) => "★".repeat(n) + "☆".repeat(5 - n)
+const formatYM = (d: Date) =>
+  `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}`
+
+const ogImage =
+  kind === "memo"
+    ? `/og/memos/${entry.id.replace(/^宿泊メモ\//, "")}.png`
+    : `/og/hotels/${entry.id.replace(/^宿泊メモ\//, "")}.png`
+---
+
+<Base title={title} description={description} ogImage={ogImage}>
+  <nav class="breadcrumb">
+    <a href="/">Hotel Memo</a> /{" "}
+    {
+      memoPath && (
+        <>
+          {memoPath.chain} /{" "}
+          <a href={`/宿泊メモ/${memoPath.chain}/${memoPath.hotel}/`}>
+            {memoPath.hotel}
+          </a>{" "}
+          /
+        </>
+      )
+    }
+  </nav>
+  <h1>{title}</h1>
+  <Content />
+  {
+    kind === "hotel" && hotelMemos.length > 0 && (
+      <section class="section">
+        <h2>宿泊メモ</h2>
+        <ul class="recent-list">
+          {hotelMemos.map((m) => (
+            <li>
+              <span class="stars">{stars(m.data.rating)}</span>
+              {m.data.stayed_at && (
+                <span class="recent-date">{formatYM(m.data.stayed_at)}</span>
+              )}
+              <span class="recent-title">
+                <a href={`/宿泊メモ/${m.id.replace(/^宿泊メモ\//, "")}/`}>
+                  {m.data.title}
+                </a>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</Base>

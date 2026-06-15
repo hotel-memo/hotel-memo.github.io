@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro"
+---
+
+<Base title="検索" description="サイト内検索">
+  <div data-pagefind-ignore="all">
+    <nav class="breadcrumb">
+      <a href="/">Hotel Memo</a>
+    </nav>
+    <h1>検索</h1>
+    <p>キーワードでサイト内を検索できます。</p>
+    <div id="search"></div>
+  </div>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script
+    src="/pagefind/pagefind-ui.js"
+    is:inline
+    onload={`new PagefindUI({ element: "#search", showImages: false, resetStyles: false })`}
+  ></script>
+</Base>
+
+<style>
+  :global(.pagefind-ui) {
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-text: var(--text);
+    --pagefind-ui-background: var(--bg);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-tag: var(--highlight);
+    --pagefind-ui-border-radius: var(--radius);
+    --pagefind-ui-font: inherit;
+  }
+</style>
