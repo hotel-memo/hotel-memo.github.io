@@ -73,7 +73,7 @@ export async function renderOgImage({
                 color: "#84a59d",
                 letterSpacing: "0.08em",
               },
-              children: "Hotel Memo",
+              children: "Hotel × Deskwork",
             },
           },
           {
@@ -127,7 +127,7 @@ export async function renderOgImage({
                 fontSize: "22px",
                 color: "#6b6b6b",
               },
-              children: "ワークチェアがあるホテルの記録",
+              children: "ホテルで仕事ができるかの記録",
             },
           },
         ],

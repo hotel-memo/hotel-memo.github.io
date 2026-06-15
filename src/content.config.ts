@@ -1,17 +1,15 @@
 import { defineCollection, z } from "astro:content"
 import { glob } from "astro/loaders"
 
-const CONTENT_BASE = "./content/hotel-memo/publish"
+const CONTENT_BASE = "./content"
 
-// Astro 5 のデフォルト generateId は github-slugger で英数字を小文字化し、
-// アンダースコアや「・」「&」などの記号も落とす。日本語サイトでファイル名と
-// URL を一致させたいので、拡張子を取った相対パスをそのまま id にする。
+// 拡張子を取った相対パスをそのまま id にする (デフォルトの slugify を無効化)。
 const generateId = ({ entry }: { entry: string }) =>
   entry.replace(/\.md$/, "").replace(/\/index$/, "")
 
 const memos = defineCollection({
   loader: glob({
-    pattern: ["宿泊メモ/**/*.md", "!宿泊メモ/**/index.md"],
+    pattern: ["memos/**/*.md", "!memos/**/index.md"],
     base: CONTENT_BASE,
     generateId,
   }),
@@ -25,7 +23,7 @@ const memos = defineCollection({
 
 const hotels = defineCollection({
   loader: glob({
-    pattern: "宿泊メモ/**/index.md",
+    pattern: "memos/**/index.md",
     base: CONTENT_BASE,
     generateId,
   }),
@@ -35,25 +33,22 @@ const hotels = defineCollection({
   }),
 })
 
-const workchair = defineCollection({
+const regions = defineCollection({
   loader: glob({
-    pattern: ["ワークチェアがあるホテル/*.md", "!ワークチェアがあるホテル/index.md"],
+    pattern: ["regions/*.md", "!regions/index.md"],
     base: CONTENT_BASE,
     generateId,
   }),
   schema: z.object({
     title: z.string().optional(),
+    order: z.number().int().optional(),
     draft: z.boolean().optional(),
   }),
 })
 
 const pages = defineCollection({
   loader: glob({
-    pattern: [
-      "index.md",
-      "パソコン作業の快適さ評価.md",
-      "ワークチェアがあるホテル/index.md",
-    ],
+    pattern: ["index.md", "ratings.md", "regions/index.md"],
     base: CONTENT_BASE,
     generateId,
   }),
@@ -63,4 +58,4 @@ const pages = defineCollection({
   }),
 })
 
-export const collections = { memos, hotels, workchair, pages }
+export const collections = { memos, hotels, regions, pages }

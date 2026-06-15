@@ -4,12 +4,9 @@ import Base from "../layouts/Base.astro"
 import { byRatingDesc, byStayedAtDesc, memoSlug } from "../lib/memo"
 
 const memos = (await getCollection("memos")).filter((m) => !m.data.draft)
-const workchair = (await getCollection("workchair")).filter(
-  (w) =>
-    !w.data.draft &&
-    !w.id.endsWith("index") &&
-    /^ワークチェアがあるホテル\/\d+_/.test(w.id)
-)
+const regions = (await getCollection("regions"))
+  .filter((r) => !r.data.draft)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
 
 const stars = (n: number) => "★".repeat(n) + "☆".repeat(5 - n)
 const formatYM = (d: Date) =>
@@ -21,34 +18,44 @@ const recent = memos
   .sort(byStayedAtDesc)
   .slice(0, 8)
 
-const regions = workchair
-  .map((w) => {
-    const name = w.id
-      .replace(/^ワークチェアがあるホテル\//, "")
-      .replace(/^\d+_/, "")
-    return { id: w.id, name }
-  })
-  .sort((a, b) => a.id.localeCompare(b.id))
+const regionNameMap: Record<string, string> = {
+  hokkaido: "北海道",
+  tohoku: "東北",
+  kanto: "関東",
+  chubu: "中部",
+  kansai: "関西",
+  "chugoku-shikoku": "中国・四国",
+  "kyushu-okinawa": "九州・沖縄",
+}
+const regionLinks = regions.map((r) => {
+  const slug = r.id.replace(/^regions\//, "")
+  return { slug, name: regionNameMap[slug] ?? slug }
+})
 ---
 
 <Base
-  title="Hotel Memo"
-  description="ワークチェアがあるホテルの情報と、実際に宿泊したホテルの記録"
+  title="Hotel × Deskwork"
+  description="ホテルの部屋で快適に仕事ができるかを 5 段階で記録。ワークチェアの有無、デスクの広さ、Wi-Fi などを評価。"
 >
+  <div class="lede">
+    <p>
+      ワークチェアやデスクの広さ、Wi-Fi など、ホテルの部屋で快適に仕事ができるかどうかを 5 段階で記録しています。実際に泊まった記録と、客室写真からワークチェアがありそうなホテルを推測したリストです。
+    </p>
+  </div>
   <section class="section">
     <div class="section__head">
       <h2>地域から探す</h2>
-      <a class="section__more" href="/ワークチェアがあるホテル/">一覧 →</a>
+      <a class="section__more" href="/regions/">一覧 →</a>
     </div>
     <div class="region-grid">
-      {regions.map((r) => <a href={`/${r.id}/`}>{r.name}</a>)}
+      {regionLinks.map((r) => <a href={`/regions/${r.slug}/`}>{r.name}</a>)}
     </div>
   </section>
 
   <section class="section">
     <div class="section__head">
       <h2>パソコン作業の快適さランキング</h2>
-      <a class="section__more" href="/パソコン作業の快適さ評価/">全件 →</a>
+      <a class="section__more" href="/ratings/">全件 →</a>
     </div>
     <ul class="rank-list">
       {

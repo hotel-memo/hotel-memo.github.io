@@ -1,4 +1,4 @@
-name: Deploy Astro site to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
@@ -20,11 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive
-          # GITHUB_TOKEN cannot access private submodules in another repo by
-          # default. Use a PAT (or a fine-grained token) stored as a secret
-          # named SUBMODULE_TOKEN with `contents: read` on mizzy/hotel-memo.
-          token: ${{ secrets.SUBMODULE_TOKEN || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - uses: actions/setup-node@v4

@@ -1,11 +1,11 @@
-# Hotel Memo
+# Hotel × Deskwork
 
-ワークチェアがあるホテルの記録。[hotel-memo.github.io](https://hotel-memo.github.io)。
+ホテルで快適にパソコン作業はできるかの記録。[hotel-memo.github.io](https://hotel-memo.github.io)。
 
 ## 構成
 
 - フレームワーク: [Astro](https://astro.build) (Content Collections + MDX)
-- コンテンツ: `content/hotel-memo` (本拠地リポジトリ `mizzy/hotel-memo` を git submodule で取り込み、Markdown は `publish/` 配下を読む)
+- コンテンツ: `content/` 配下に直接置く
 - 検索: [Pagefind](https://pagefind.app)
 - OG 画像: Satori + resvg でビルド時に生成
 - デプロイ: GitHub Actions → GitHub Pages
@@ -21,40 +21,25 @@ npm run preview     # ビルド結果を確認
 
 `.node-version` を見てね (Node 22)。
 
-## コンテンツの更新
-
-本拠地は `mizzy/hotel-memo` (private)。Obsidian の vault から `publish/` に流し、commit & push する運用。
-
-このサイト側に最新コンテンツを取り込むには:
-
-```sh
-make sync     # submodule を本拠地 main の HEAD に追従
-make publish  # sync して、submodule pointer の更新をこのリポジトリに commit & push
-```
-
-## ディレクトリ
+## ディレクトリ構成
 
 ```
-src/
-├ content.config.ts        # Content Collections のスキーマ
-├ layouts/Base.astro       # 共通レイアウト
-├ pages/                   # ルーティング
-├ lib/                     # ヘルパ (memo, og, remark-rewrite-images)
-├ styles/global.css        # スタイル (ライトモードのみ)
-└ assets/                  # OG 画像用の Noto Sans JP
-
-content/hotel-memo/        # submodule
-└ publish/                 # サイトに載るのはここだけ
-   ├ index.md
-   ├ パソコン作業の快適さ評価.md
-   ├ images/
-   ├ ワークチェアがあるホテル/   # 地域別カタログ
-   └ 宿泊メモ/                  # チェーン/ホテル/部屋タイプ
+content/
+├ index.md                       # トップページ本文
+├ ratings.md                     # パソコン作業の快適さ評価
+├ images/YYYY/MM/foo.jpg         # 撮影日でディレクトリ分け
+├ memos/                         # 宿泊メモ
+│   └ {chain}/{hotel}/
+│       ├ index.md               # ホテル単位の概要
+│       └ {room}.md              # 部屋ごとのメモ
+└ regions/                       # ワークチェアがあるホテル一覧
+    ├ index.md
+    └ {region}.md
 ```
 
 ## frontmatter
 
-部屋メモ (`publish/宿泊メモ/{chain}/{hotel}/{room}.md`):
+### 部屋メモ (`content/memos/{chain}/{hotel}/{room}.md`)
 
 ```yaml
 ---
@@ -64,12 +49,27 @@ stayed_at: 2026-05-13   # 最新の宿泊日。不明なら省略
 ---
 ```
 
-`title` がランキング・最近の宿泊メモに使われる。`rating` がランキングのキー、`stayed_at` が「最近の宿泊メモ」のキー。`stayed_at` を省略するとランキングだけに出る。
+- `title`: 一覧表示で使う。
+- `rating`: ★ランキングのキー。
+- `stayed_at`: 「最近の宿泊メモ」のキー。省略するとランキングだけに出る。
 
-地域カタログとホテル単位 index には frontmatter を入れていない。タイトルは本文の `# 見出し` を抽出して使う。
+### 地域カタログ (`content/regions/{region}.md`)
+
+```yaml
+---
+title: 関東地方のワークチェアがあるホテル
+order: 3
+---
+```
+
+`order` がトップの「地域から探す」と地域一覧の並び順。
+
+## Markdown の書き方
+
+- 画像は絶対パスで参照: `![](/images/2026/05/foo.jpg)`
+- 他のページへのリンクは相対 or 絶対の `.md` で書ける。ビルド時に `.md` を取って `/` 終わりの URL にする。
+- GFM の `> [!WARNING]` のような alert 記法に対応。
 
 ## デプロイ
 
 GitHub Pages に `main` への push で自動デプロイ (`.github/workflows/deploy.yml`)。
-
-本拠地リポジトリが private なので、CI から submodule を fetch するために PAT を `SUBMODULE_TOKEN` という名前で repo secret に設定する必要がある。`contents: read` 権限で十分。

@@ -5,12 +5,12 @@ import { extractH1 } from "../../lib/memo"
 export async function getStaticPaths() {
   const memos = await getCollection("memos")
   const hotels = await getCollection("hotels")
-  const workchair = await getCollection("workchair")
+  const regions = await getCollection("regions")
   const pages = await getCollection("pages")
 
   return [
     ...memos.map((m) => ({
-      params: { slug: `memos/${m.id.replace(/^宿泊メモ\//, "")}` },
+      params: { slug: m.id }, // memos/<chain>/<hotel>/<room>
       props: {
         title: m.data.title,
         subtitle: m.id.split("/")[1] ?? undefined,
@@ -18,16 +18,16 @@ export async function getStaticPaths() {
       },
     })),
     ...hotels.map((h) => ({
-      params: { slug: `hotels/${h.id.replace(/^宿泊メモ\//, "")}` },
+      params: { slug: `hotels/${h.id.replace(/^memos\//, "")}` },
       props: {
         title: extractH1(h.body) ?? h.id,
         subtitle: h.id.split("/")[1] ?? undefined,
       },
     })),
-    ...workchair.map((w) => ({
-      params: { slug: `workchair/${w.id.replace(/^ワークチェアがあるホテル\//, "")}` },
+    ...regions.map((r) => ({
+      params: { slug: r.id }, // regions/<slug>
       props: {
-        title: extractH1(w.body) ?? "ワークチェアがあるホテル",
+        title: r.data.title ?? extractH1(r.body) ?? "ワークチェアがあるホテル",
       },
     })),
     ...pages.map((p) => ({
@@ -38,7 +38,7 @@ export async function getStaticPaths() {
     })),
     {
       params: { slug: "index" },
-      props: { title: "Hotel Memo" },
+      props: { title: "Hotel × Deskwork" },
     },
   ]
 }

@@ -1,4 +1,0 @@
-[submodule "content/hotel-memo"]
-	path = content/hotel-memo
-	url = https://github.com/mizzy/hotel-memo.git
-	branch = main

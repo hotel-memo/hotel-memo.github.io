@@ -16,7 +16,7 @@ export async function GET(context: APIContext) {
       title: m.data.title,
       description: `★${m.data.rating}/5`,
       pubDate: m.data.stayed_at!,
-      link: `/宿泊メモ/${m.id.replace(/^宿泊メモ\//, "")}/`,
+      link: `/${m.id}/`,
     })),
   })
 }
