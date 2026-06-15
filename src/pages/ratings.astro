@@ -1,0 +1,18 @@
+---
+import { getEntry, render } from "astro:content"
+import Base from "../layouts/Base.astro"
+import { extractH1 } from "../lib/memo"
+
+const entry = await getEntry("pages", "ratings")
+if (!entry) throw new Error("ratings ページが見つかりません")
+const { Content } = await render(entry)
+const title = entry.data.title ?? extractH1(entry.body) ?? "パソコン作業の快適さ評価"
+---
+
+<Base title={title} ogImage="/og/pages/ratings.png">
+  <nav class="breadcrumb">
+    <a href="/">Hotel × Deskwork</a>
+  </nav>
+  <h1>{title}</h1>
+  <Content />
+</Base>

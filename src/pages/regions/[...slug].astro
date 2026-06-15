@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from "astro:content"
+import Base from "../../layouts/Base.astro"
+import { extractH1 } from "../../lib/memo"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("regions")
+  return entries.map((entry) => ({
+    params: { slug: entry.id.replace(/^regions\//, "") },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const title = entry.data.title ?? extractH1(entry.body) ?? "regions"
+const ogImage = `/og/regions/${entry.id.replace(/^regions\//, "")}.png`
+---
+
+<Base title={title} ogImage={ogImage}>
+  <nav class="breadcrumb">
+    <a href="/">Hotel × Deskwork</a> /{" "}
+    <a href="/regions/">ワークチェアがあるホテル</a> /
+  </nav>
+  <Content />
+</Base>
