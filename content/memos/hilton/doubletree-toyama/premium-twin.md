@@ -56,7 +56,9 @@ og_cover: /images/2026/01/doubletree-toyama-1313-IMG_8235.jpg
 ### ベッドサイド
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8236.jpg)
+
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8228.jpg)
+
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8229.jpg)
 
 ### 作業環境
@@ -70,6 +72,7 @@ og_cover: /images/2026/01/doubletree-toyama-1313-IMG_8235.jpg
 ### 朝食
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8232.jpg)
+
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8233.jpg)
 
 ## 部屋の設備・特徴
