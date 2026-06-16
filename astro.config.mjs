@@ -5,6 +5,7 @@ import { remarkAlert } from "remark-github-blockquote-alert"
 import remarkRewriteLinks from "./src/lib/remark-rewrite-links.mjs"
 import rehypeSlug from "rehype-slug"
 import rehypeStayDate from "./src/lib/rehype-stay-date.mjs"
+import rehypeStayedBadge from "./src/lib/rehype-stayed-badge.mjs"
 
 export default defineConfig({
   site: "https://hotel-memo.github.io",
@@ -12,7 +13,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   markdown: {
     remarkPlugins: [remarkAlert, remarkRewriteLinks],
-    rehypePlugins: [rehypeSlug, rehypeStayDate],
+    rehypePlugins: [rehypeSlug, rehypeStayDate, rehypeStayedBadge],
     shikiConfig: {
       theme: "github-light",
     },
