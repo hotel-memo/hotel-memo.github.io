@@ -49,16 +49,12 @@ og_cover: /images/2025/09/hilton-seahawk-1728-IMG_7802.jpg
 
 ![客室別角度](/images/2025/09/hilton-seahawk-1728-IMG_7799.jpg)
 
-チェックイン時のウェルカムギフト。
 ![チェックイン時のウェルカムギフト](/images/2025/09/hilton-seahawk-1728-IMG_7806.jpg)
 
-5階にある中国料理「望海楼」
 ![5階中国料理「望海楼」からの眺望](/images/2025/09/hilton-seahawk-1728-IMG_7808.jpg)
 
-酸辣湯麺。上に乗っているのは生湯葉。
 ![酸辣湯麺](/images/2025/09/hilton-seahawk-1728-IMG_7809.jpg)
 
-33Fのエグゼクティブラウンジ。
 ![福岡の眺望](/images/2025/09/hilton-seahawk-1728-IMG_7810.jpg)
 
 ----
