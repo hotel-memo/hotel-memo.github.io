@@ -25,28 +25,20 @@ og_cover: /images/2025/07/Gvf8xizaMAAya7X.jpeg
 
 ## 写真
 
-### ワークチェア（オカムラ mode）
 ![](/images/2025/07/Gvf4r7aakAEk1t5.jpeg)
 
-### デスク周り
 ![](/images/2025/07/Gvf8xizaMAAya7X.jpeg)
 
-### 無料の水
 ![](/images/2025/07/Gvkoy_abAAA_3wA.jpeg)
 
-### 朝食会場（All-Day Dining "Saus"）
-
 ![](/images/2025/07/2017733_98gFs5L3K_4p9-aURTl30chO3XGZmb1guEVNp2qI4Xk.jpg)
-### ダイヤモンド会員朝食会場（Brew33 Bar）
 
 ![](/images/2025/07/GvnBaVKbsAA7-UG.jpeg)
 
 ![](/images/2025/07/GvsOVKubsAQmJ22.jpeg)
 
-### All-Day Dining "Saus"での昼食
 ![](/images/2025/07/GvtI5OVasAAYjOg.jpeg)
 
-### ダイヤモンド会員特典のスタバのコーヒー（ロビーラウンジ）
 ![](/images/2025/07/Gvsyj3UbsAAt-uO.jpeg)
 
 ## 部屋の設備・特徴

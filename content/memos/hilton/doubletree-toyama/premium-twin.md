@@ -33,27 +33,15 @@ og_cover: /images/2026/01/doubletree-toyama-1313-IMG_8235.jpg
 
 ## 写真
 
-### 部屋全体
-
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8222.jpg)
-
-### テレビ・ミニバー
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8225.jpg)
 
-### ネスプレッソマシン
-
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8230.jpg)
-
-### バスルーム
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8223.jpg)
 
-### 廊下・入口エリア
-
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8224.jpg)
-
-### ベッドサイド
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8236.jpg)
 
@@ -61,15 +49,9 @@ og_cover: /images/2026/01/doubletree-toyama-1313-IMG_8235.jpg
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8229.jpg)
 
-### 作業環境
-
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8231.jpg)
 
-### 眺望
-
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8235.jpg)
-
-### 朝食
 
 ![](/images/2026/01/doubletree-toyama-1313-IMG_8232.jpg)
 
