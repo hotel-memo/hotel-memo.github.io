@@ -1491,3 +1491,93 @@ main.home {
   color: var(--text);
   font-weight: 500;
 }
+
+/* 部屋メモ末尾: 同じホテルの他のメモ */
+.sibling-memos {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.sibling-memos .section-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.sibling-memos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sibling-memos li {
+  display: grid;
+  grid-template-columns: 84px 7.5em 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+.sibling-memos li:last-child { border-bottom: 0; }
+
+.sibling-memos .thumb {
+  width: 84px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: var(--highlight);
+  display: block;
+  margin: 0;
+}
+
+.sibling-memos .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.sibling-memos .stars {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+.sibling-memos .stars .on  { color: var(--star); }
+.sibling-memos .stars .off { color: var(--star-empty); }
+
+.sibling-memos .date {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.sibling-memos .title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.sibling-memos .title a { color: var(--accent); }
+
+.sibling-memos__more {
+  margin: 0.9rem 0 0;
+  font-size: 0.85rem;
+}
+.sibling-memos__more a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+@media (max-width: 540px) {
+  .sibling-memos li {
+    grid-template-columns: 64px 5.5em 1fr;
+    gap: 0.6rem;
+  }
+  .sibling-memos .thumb { width: 64px; height: 44px; }
+}
