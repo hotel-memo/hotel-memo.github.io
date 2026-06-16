@@ -58,6 +58,9 @@ const hotelMemos =
 
 let parentHotelName: string | null = null
 let parentHotelHref: string | null = null
+const SIBLING_LIMIT = 6
+let siblingMemos: Awaited<ReturnType<typeof getCollection<"memos">>> = []
+let siblingTotal = 0
 if (kind === "memo" && memoPath) {
   const parentId = `memos/${memoPath.chain}/${memoPath.hotel}`
   const parentEntry = (await getCollection("hotels")).find(
@@ -67,6 +70,20 @@ if (kind === "memo" && memoPath) {
     parentEntry?.data.title ??
     (parentEntry ? (extractH1(parentEntry.body) ?? memoPath.hotel) : memoPath.hotel)
   parentHotelHref = `/${parentId}/`
+
+  const all = (await getCollection("memos"))
+    .filter((m) => !m.data.draft)
+    .filter((m) => m.id.startsWith(parentId + "/"))
+    .filter((m) => m.id !== entry.id)
+  siblingTotal = all.length
+  siblingMemos = all
+    .sort((a, b) => {
+      if (b.data.rating !== a.data.rating) return b.data.rating - a.data.rating
+      const ad = a.data.stayed_at?.getTime() ?? 0
+      const bd = b.data.stayed_at?.getTime() ?? 0
+      return bd - ad
+    })
+    .slice(0, SIBLING_LIMIT)
 }
 
 const formatYM = (d: Date) =>
@@ -219,6 +236,41 @@ const ogImage =
     </div>
   ) : (
     <Content />
+  )}
+
+  {kind === "memo" && siblingTotal > 0 && (
+    <section class="sibling-memos">
+      <span class="section-label">
+        {parentHotelName} の他のメモ（{siblingTotal}件）
+      </span>
+      <ul>
+        {siblingMemos.map((m) => (
+          <li>
+            {m.data.cover ? (
+              <img class="thumb" src={m.data.cover} alt="" />
+            ) : (
+              <span class="thumb" aria-hidden="true"></span>
+            )}
+            <div class="meta">
+              <span class="stars">
+                <span class="on">{"★".repeat(m.data.rating)}</span><span class="off">{"☆".repeat(5 - m.data.rating)}</span>
+              </span>
+              <span class="date">
+                {m.data.stayed_at ? formatYM(m.data.stayed_at) : "—"}
+              </span>
+            </div>
+            <span class="title">
+              <a href={`/memos/${m.id.replace(/^memos\//, "")}/`}>{m.data.title}</a>
+            </span>
+          </li>
+        ))}
+      </ul>
+      {siblingTotal > SIBLING_LIMIT && parentHotelHref && (
+        <p class="sibling-memos__more">
+          <a href={parentHotelHref}>+ {siblingTotal - SIBLING_LIMIT}件 →</a>
+        </p>
+      )}
+    </section>
   )}
 
   {kind === "memo" && (
