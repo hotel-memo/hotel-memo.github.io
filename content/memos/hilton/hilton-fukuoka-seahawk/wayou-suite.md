@@ -19,7 +19,7 @@ og_cover: /images/2025/08/ADFE9A4D-F77E-42B9-B0FB-B376B9D5C403.jpeg
 
 ## 704号室
 
-2020/12/17-19宿泊
+2020/12/17-19
 
 - 椅子はほかの部屋タイプと違い、Steelcase Thinkではない。Vitra Softshell Chair？（確認し忘れた）
 -  エレベーターから近い。703の方が近いけど。
