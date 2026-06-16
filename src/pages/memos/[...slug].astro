@@ -221,6 +221,54 @@ const ogImage =
     <Content />
   )}
 
+  {kind === "memo" && (
+    <dialog class="lightbox" aria-label="拡大表示">
+      <button class="lightbox__close" type="button" aria-label="閉じる">×</button>
+      <button class="lightbox__prev" type="button" aria-label="前の写真">‹</button>
+      <img class="lightbox__img" alt="" />
+      <button class="lightbox__next" type="button" aria-label="次の写真">›</button>
+    </dialog>
+    <script>
+      const memo = document.querySelector(".memo")
+      const dialog = document.querySelector(".lightbox") as HTMLDialogElement | null
+      const dialogImg = dialog?.querySelector(".lightbox__img") as HTMLImageElement | null
+      const prevBtn = dialog?.querySelector(".lightbox__prev") as HTMLButtonElement | null
+      const nextBtn = dialog?.querySelector(".lightbox__next") as HTMLButtonElement | null
+      const closeBtn = dialog?.querySelector(".lightbox__close") as HTMLButtonElement | null
+      if (memo && dialog && dialogImg && prevBtn && nextBtn && closeBtn) {
+        const imgs = Array.from(memo.querySelectorAll("p > img")) as HTMLImageElement[]
+        let index = 0
+        const show = (i: number) => {
+          index = (i + imgs.length) % imgs.length
+          dialogImg.src = imgs[index].src
+        }
+        imgs.forEach((img, i) => {
+          img.style.cursor = "zoom-in"
+          img.addEventListener("click", () => {
+            show(i)
+            dialog.showModal()
+          })
+        })
+        prevBtn.addEventListener("click", (e) => {
+          e.stopPropagation()
+          show(index - 1)
+        })
+        nextBtn.addEventListener("click", (e) => {
+          e.stopPropagation()
+          show(index + 1)
+        })
+        closeBtn.addEventListener("click", () => dialog.close())
+        dialog.addEventListener("click", (e) => {
+          if (e.target === dialog) dialog.close()
+        })
+        dialog.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") show(index - 1)
+          else if (e.key === "ArrowRight") show(index + 1)
+        })
+      }
+    </script>
+  )}
+
   {
     kind === "hotel" && hotelMemos.length > 0 && (
       <section>
