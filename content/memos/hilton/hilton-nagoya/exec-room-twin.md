@@ -21,7 +21,7 @@ og_cover: /images/2026/05/IMG_8650.jpg
 
 ## 2316号室
 
-2026/05/13〜 2026/05/16宿泊
+2026/5/13-16
 
 - ヒルトンルームクイーンからのアップグレード
 - 椅子は[Vitra Softshell Chair](https://www.vitra.com/ja-jp/product/details/softshell-chair-five-star-base)

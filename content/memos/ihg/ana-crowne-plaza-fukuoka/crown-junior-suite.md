@@ -15,8 +15,9 @@ og_cover: /images/2020/08/EgvggG9UMAAr52i.jpeg
 - 喫煙/禁煙: 禁煙
 - 参照元: https://www.anacrowneplaza-fukuoka.jp/stay/club-jr-suite/ （取得日: 2025-09-07）
 
-## 宿泊日
-2020年8月30日（1泊）
+## 部屋番号失念
+
+2020/8/30
 
 ## 部屋タイプ
 クラウンジュニアスイート

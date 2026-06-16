@@ -1478,3 +1478,16 @@ main.home {
     font-size: 1.7rem;
   }
 }
+
+/* memo body の宿泊日ストリップ */
+.memo .stay-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  margin: -0.3rem 0 1rem;
+  letter-spacing: 0.02em;
+}
+.memo .stay-date .n {
+  color: var(--text);
+  font-weight: 500;
+}

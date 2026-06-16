@@ -13,9 +13,9 @@ og_cover: /images/2025/11/daiwa-roynet-kokura-ekimae-superior-double-3.jpg
 - インターネット速度は出る（790Mbps）が、接続が不安定で快適ではない。
 
 
-## 宿泊日
+## 部屋番号失念
 
-2025年11月7日〜10日
+2025/11/7-10
 
 
 ## 部屋タイプ
