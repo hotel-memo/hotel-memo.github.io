@@ -31,3 +31,12 @@ export function byRatingDesc(a: Memo, b: Memo) {
   if (a.data.rating !== b.data.rating) return b.data.rating - a.data.rating
   return byStayedAtDesc(a, b)
 }
+
+export const chainNameMap: Record<string, string> = {
+  hilton: "Hilton",
+  tokyu: "東急ホテルズ",
+  "daiwa-roynet": "ダイワロイネット",
+  "jr-east-mets": "JR東日本ホテルメッツ",
+  hyatt: "Hyatt",
+  ihg: "IHG",
+}

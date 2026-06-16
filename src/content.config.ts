@@ -16,7 +16,10 @@ const memos = defineCollection({
   schema: z.object({
     title: z.string(),
     rating: z.number().int().min(1).max(5),
+    rating_note: z.string().optional(),
     stayed_at: z.coerce.date().optional(),
+    cover: z.string().optional(),
+    og_cover: z.string().optional(),
     draft: z.boolean().optional(),
   }),
 })
@@ -29,6 +32,9 @@ const hotels = defineCollection({
   }),
   schema: z.object({
     title: z.string().optional(),
+    chain: z.string().optional(),
+    official: z.string().url().optional(),
+    og_cover: z.string().optional(),
     draft: z.boolean().optional(),
   }),
 })
@@ -48,7 +54,7 @@ const regions = defineCollection({
 
 const pages = defineCollection({
   loader: glob({
-    pattern: ["index.md", "ratings.md", "regions/index.md"],
+    pattern: ["index.md", "ratings.md"],
     base: CONTENT_BASE,
     generateId,
   }),

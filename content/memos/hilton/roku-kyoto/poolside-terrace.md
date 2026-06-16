@@ -2,11 +2,11 @@
 title: ROKU KYOTO, LXR Hotels & Resorts プールサイドテラス
 rating: 2
 stayed_at: 2026-02-14
+cover: /images/2026/02/IMG_8347.jpg
+og_cover: /images/2026/02/IMG_8358.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★☆☆☆
 
 WiFiは良いが、デスクや椅子がパソコン作業向きではない。
 

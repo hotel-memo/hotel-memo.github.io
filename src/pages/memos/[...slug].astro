@@ -1,7 +1,12 @@
 ---
 import { getCollection, render } from "astro:content"
 import Base from "../../layouts/Base.astro"
-import { byStayedAtDesc, extractH1, memoPathInfo } from "../../lib/memo"
+import {
+  byStayedAtDesc,
+  chainNameMap,
+  extractH1,
+  memoPathInfo,
+} from "../../lib/memo"
 
 export async function getStaticPaths() {
   const memos = await getCollection("memos")
@@ -33,17 +38,76 @@ const fallbackTitle =
   kind === "hotel" ? extractH1(entry.body) ?? entry.id : entry.id
 const title = entry.data.title ?? fallbackTitle
 
-// ホテルページなら配下の宿泊メモ一覧
+const officialHostname =
+  kind === "hotel" && (entry as any).data.official
+    ? new URL((entry as any).data.official).hostname
+    : ""
+
+const hotelChainKey = kind === "hotel" ? entry.id.split("/")[1] : null
+const hotelChainName = hotelChainKey
+  ? (chainNameMap[hotelChainKey] ?? hotelChainKey)
+  : null
+
 const hotelMemos =
   kind === "hotel"
     ? (await getCollection("memos"))
+        .filter((m) => m.id.startsWith("memos/"))
         .filter((m) => m.id.startsWith(entry.id + "/"))
         .sort(byStayedAtDesc)
     : []
 
-const stars = (n: number) => "★".repeat(n) + "☆".repeat(5 - n)
+let parentHotelName: string | null = null
+let parentHotelHref: string | null = null
+if (kind === "memo" && memoPath) {
+  const parentId = `memos/${memoPath.chain}/${memoPath.hotel}`
+  const parentEntry = (await getCollection("hotels")).find(
+    (h) => h.id === parentId,
+  )
+  parentHotelName =
+    parentEntry?.data.title ??
+    (parentEntry ? (extractH1(parentEntry.body) ?? memoPath.hotel) : memoPath.hotel)
+  parentHotelHref = `/${parentId}/`
+}
+
 const formatYM = (d: Date) =>
   `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}`
+
+const formatYMD = (d: Date) =>
+  `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`
+
+let stayJumps: { id: string; label: string; date?: string }[] = []
+let totalStays = 1
+if (kind === "memo") {
+  const counts = new Map<string, number>()
+  const lines = entry.body?.split("\n") ?? []
+  const raw: { name: string; date?: string }[] = []
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(/^##\s+(\d+号室)\s*$/)
+    if (!m) continue
+    const name = m[1]
+    let date: string | undefined
+    for (let j = i + 1; j < Math.min(i + 5, lines.length); j++) {
+      const t = lines[j].trim()
+      if (!t) continue
+      const d = t.match(/(\d{4})[.\-/年](\d{1,2})[.\-/月]?(\d{1,2})?/)
+      if (d) {
+        const yyyy = d[1]
+        const mm = d[2].padStart(2, "0")
+        date = d[3] ? `${yyyy}.${mm}.${d[3].padStart(2, "0")}` : `${yyyy}.${mm}`
+      }
+      break
+    }
+    raw.push({ name, date })
+  }
+  stayJumps = raw.map(({ name, date }) => {
+    const n = (counts.get(name) ?? 0) + 1
+    counts.set(name, n)
+    const id = n === 1 ? name : `${name}-${n}`
+    const label = date ? `${name} · ${date}` : name
+    return { id, label, date }
+  })
+  totalStays = Math.max(stayJumps.length, 1)
+}
 
 const ogImage =
   kind === "memo"
@@ -52,34 +116,133 @@ const ogImage =
 ---
 
 <Base title={title} description={description} ogImage={ogImage}>
-  <nav class="breadcrumb">
-    <a href="/">Hotel × Deskwork</a> /{" "}
-    {
-      memoPath && (
-        <>
-          {memoPath.chain} /{" "}
-          <a href={`/memos/${memoPath.chain}/${memoPath.hotel}/`}>
-            {memoPath.hotel}
-          </a>{" "}
-          /
-        </>
-      )
-    }
-  </nav>
-  <h1>{title}</h1>
-  <Content />
+  {
+    kind === "memo" && (
+      <>
+        <p class="memo-kicker">
+          {parentHotelHref ? (
+            <a href={parentHotelHref}>← {parentHotelName}</a>
+          ) : (
+            "宿泊メモ"
+          )}
+        </p>
+        <h1>{title}</h1>
+
+        <div class="memo-hero">
+          <div class="rating">
+            <span class="stars">
+              <span class="on">{"★".repeat((entry as any).data.rating)}</span>
+              <span class="off">
+                {"☆".repeat(5 - (entry as any).data.rating)}
+              </span>
+            </span>
+            <span class="score">{(entry as any).data.rating} / 5</span>
+          </div>
+          {(entry as any).data.rating_note && (
+            <div
+              class="rating-note"
+              set:html={(entry as any).data.rating_note.replace(
+                /★+/g,
+                (m: string) => `<span class="s">${m}</span>`,
+              )}
+            />
+          )}
+          <div class="meta">
+            <span class="badge-stayed">実宿泊</span>
+            {(entry as any).data.stayed_at && (
+              <span>
+                <span class="label">{totalStays > 1 ? "最新" : "宿泊"}</span>
+                {formatYMD((entry as any).data.stayed_at)}
+              </span>
+            )}
+            {totalStays > 1 && (
+              <span>
+                <span class="label">記録</span>
+                {totalStays}回
+              </span>
+            )}
+          </div>
+        </div>
+
+        {stayJumps.length > 1 && (
+          <nav class="stay-jumps">
+            <span class="label">宿泊履歴</span>
+            <div class="chips">
+              {stayJumps.map((j) => (
+                <a href={`#${j.id}`}>{j.label}</a>
+              ))}
+            </div>
+          </nav>
+        )}
+      </>
+    )
+  }
+
+  {
+    kind === "hotel" && (
+      <>
+        <p class="hotel-kicker">
+          {hotelChainKey ? (
+            <a href={`/memos/${hotelChainKey}/`}>← {hotelChainName}</a>
+          ) : (
+            "ホテル"
+          )}
+        </p>
+        <h1>{title}</h1>
+        <div class="hotel-meta">
+          {(entry as any).data.chain && (
+            <span>
+              <span class="label">チェーン</span>
+              {(entry as any).data.chain}
+            </span>
+          )}
+          {(entry as any).data.official && (
+            <span>
+              <span class="label">公式</span>
+              <a
+                href={(entry as any).data.official}
+                target="_blank"
+                rel="noopener"
+              >
+                {officialHostname} ↗
+              </a>
+            </span>
+          )}
+        </div>
+      </>
+    )
+  }
+
+  {kind === "memo" ? (
+    <div class="memo">
+      <Content />
+    </div>
+  ) : (
+    <Content />
+  )}
+
   {
     kind === "hotel" && hotelMemos.length > 0 && (
-      <section class="section">
-        <h2>宿泊メモ</h2>
-        <ul class="recent-list">
+      <section>
+        <span class="section-label">宿泊メモ（{hotelMemos.length}件）</span>
+        <ul class="memo-list">
           {hotelMemos.map((m) => (
             <li>
-              <span class="stars">{stars(m.data.rating)}</span>
-              {m.data.stayed_at && (
-                <span class="recent-date">{formatYM(m.data.stayed_at)}</span>
+              {m.data.cover ? (
+                <img class="thumb" src={m.data.cover} alt="" />
+              ) : (
+                <span class="thumb" aria-hidden="true" />
               )}
-              <span class="recent-title">
+              <div class="meta">
+                <span class="stars">
+                  <span class="on">{"★".repeat(m.data.rating)}</span>
+                  <span class="off">{"☆".repeat(5 - m.data.rating)}</span>
+                </span>
+                <span class="date">
+                  {m.data.stayed_at ? formatYM(m.data.stayed_at) : "—"}
+                </span>
+              </div>
+              <span class="title">
                 <a href={`/memos/${m.id.replace(/^memos\//, "")}/`}>
                   {m.data.title}
                 </a>

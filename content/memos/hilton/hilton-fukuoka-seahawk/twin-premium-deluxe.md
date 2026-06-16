@@ -2,11 +2,11 @@
 title: ヒルトン福岡シーホーク ツインプレミアムデラックス
 rating: 5
 stayed_at: 2025-09-23
+cover: /images/2025/09/hilton-seahawk-1728-IMG_7801.jpg
+og_cover: /images/2025/09/hilton-seahawk-1728-IMG_7802.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★★★★
 
 ----
 ## 部屋情報（公式サイトより）

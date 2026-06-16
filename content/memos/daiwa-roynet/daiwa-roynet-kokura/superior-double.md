@@ -2,11 +2,11 @@
 title: ダイワロイネットホテル小倉駅前 スーペリアダブル
 rating: 2
 stayed_at: 2025-11-07
+cover: /images/2025/11/daiwa-roynet-kokura-ekimae-superior-double-3.jpg
+og_cover: /images/2025/11/daiwa-roynet-kokura-ekimae-superior-double-3.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★☆☆☆
 
 - ワークチェアはイトーキのエピオスチェア、肘掛けなし。
 - デスクは十分な広さがあり、デスクライトも完備。

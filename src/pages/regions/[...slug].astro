@@ -18,9 +18,7 @@ const ogImage = `/og/regions/${entry.id.replace(/^regions\//, "")}.png`
 ---
 
 <Base title={title} ogImage={ogImage}>
-  <nav class="breadcrumb">
-    <a href="/">Hotel × Deskwork</a> /{" "}
-    <a href="/regions/">ワークチェアがあるホテル</a> /
-  </nav>
-  <Content />
+  <div class="regions">
+    <Content />
+  </div>
 </Base>

@@ -2,11 +2,11 @@
 title: ヒルトン福岡シーホーク エグゼクティブデラックスツイン
 rating: 5
 stayed_at: 2020-12-07
+cover: /images/2025/08/5D91E8BF-9BA8-4F9A-817C-C522F5B196D6.jpeg
+og_cover: /images/2025/08/6DBCB1D6-20B3-488A-AF9C-CC50E681E202.jpeg
 ---
 
 ## パソコン作業の快適さ
-
-★★★★★
 
 ## 部屋情報（公式サイトより）
 

@@ -1,58 +1,68 @@
 ---
-title: 東北地方のワークチェアがあるホテル
+title: 東北地方のワークチェアがありそうなホテル
 order: 2
 ---
 
-# 東北地方のワークチェアがあるホテル
+# 東北地方のワークチェアがありそうなホテル
 
 ## 青森県
 
 ### ダイワロイネットホテル青森
-- URL: [https://www.daiwaroynet.jp/aomori/](https://www.daiwaroynet.jp/aomori/)
-- [客室](https://www.daiwaroynet.jp/aomori/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/aomori](https://www.daiwaroynet.jp/aomori/)
 
 ### ダイワロイネットホテル八戸
-- URL: [https://www.daiwaroynet.jp/hachinohe/](https://www.daiwaroynet.jp/hachinohe/)
-- [客室](https://www.daiwaroynet.jp/hachinohe/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/hachinohe](https://www.daiwaroynet.jp/hachinohe/)
 
 ## 岩手県
 
 ### ダイワロイネットホテル盛岡
-- URL: [https://www.daiwaroynet.jp/morioka/](https://www.daiwaroynet.jp/morioka/)
-- [客室](https://www.daiwaroynet.jp/morioka/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/morioka](https://www.daiwaroynet.jp/morioka/)
 
 ### ダイワロイネットホテル盛岡駅前
-- URL: [https://www.daiwaroynet.jp/morioka-ekimae/](https://www.daiwaroynet.jp/morioka-ekimae/)
-- [客室](https://www.daiwaroynet.jp/morioka-ekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/morioka-ekimae](https://www.daiwaroynet.jp/morioka-ekimae/)
 
 ## 秋田県
 
 ### ダイワロイネットホテル秋田駅前
-- URL: [https://www.daiwaroynet.jp/akita-ekimae/](https://www.daiwaroynet.jp/akita-ekimae/)
-- [客室](https://www.daiwaroynet.jp/akita-ekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/akita-ekimae](https://www.daiwaroynet.jp/akita-ekimae/)
 
 ## 山形県
 
 ### ダイワロイネットホテル山形駅前
-- URL: [https://www.daiwaroynet.jp/yamagata-ekimae/](https://www.daiwaroynet.jp/yamagata-ekimae/)
-- [客室](https://www.daiwaroynet.jp/yamagata-ekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/yamagata-ekimae](https://www.daiwaroynet.jp/yamagata-ekimae/)
 
 ## 宮城県
 
 ### ダイワロイネットホテル仙台
-- URL: [https://www.daiwaroynet.jp/sendai/](https://www.daiwaroynet.jp/sendai/)
-- [客室](https://www.daiwaroynet.jp/sendai/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/sendai](https://www.daiwaroynet.jp/sendai/)
 
 ### ダイワロイネットホテル仙台西口 PREMIER
-- URL: [https://www.daiwaroynet.jp/sendai-nishiguchi/](https://www.daiwaroynet.jp/sendai-nishiguchi/)
-- [客室](https://www.daiwaroynet.jp/sendai-nishiguchi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/sendai-nishiguchi](https://www.daiwaroynet.jp/sendai-nishiguchi/)
 
 ### ダイワロイネットホテル仙台一番町 PREMIER
-- URL: [https://www.daiwaroynet.jp/sendai-ichibancho/](https://www.daiwaroynet.jp/sendai-ichibancho/)
-- [客室](https://www.daiwaroynet.jp/sendai-ichibancho/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/sendai-ichibancho](https://www.daiwaroynet.jp/sendai-ichibancho/)
 
 ## 福島県
 
 ### ダイワロイネットホテル郡山駅前
-- URL: [https://www.daiwaroynet.jp/koriyamaekimae/](https://www.daiwaroynet.jp/koriyamaekimae/)
-- [客室](https://www.daiwaroynet.jp/koriyamaekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/koriyamaekimae](https://www.daiwaroynet.jp/koriyamaekimae/)

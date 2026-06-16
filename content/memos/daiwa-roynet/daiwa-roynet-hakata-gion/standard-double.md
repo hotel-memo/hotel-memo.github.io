@@ -2,11 +2,11 @@
 title: ダイワロイネットホテル博多祇園 スタンダードダブル
 rating: 1
 stayed_at: 2025-09-23
+cover: /images/2025/09/daiwa-roynet-hakata-gion-IMG_7790.jpg
+og_cover: /images/2025/09/daiwa-roynet-hakata-gion-IMG_7788.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★☆☆☆☆
 
 - インターネット接続が不安定なのに耐えられなくなり、2泊の予定が1日目でチェックアウトしてヒルトンに移動した。
 - お金は全額返金される模様。

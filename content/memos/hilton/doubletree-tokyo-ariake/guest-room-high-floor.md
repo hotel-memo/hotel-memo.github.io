@@ -2,11 +2,11 @@
 title: ダブルツリーbyヒルトン東京有明 ゲストルーム上層階
 rating: 5
 stayed_at: 2025-07-10
+cover: /images/2025/07/Gvf4r7aakAEk1t5.jpeg
+og_cover: /images/2025/07/Gvf8xizaMAAya7X.jpeg
 ---
 
 ## パソコン作業の快適さ
-
-★★★★★
 
 ## 宿泊日
 2025年7月10日〜13日（SRE NEXT参加時）

@@ -1,78 +1,94 @@
 ---
-title: 関西地方のワークチェアがあるホテル
+title: 関西地方のワークチェアがありそうなホテル
 order: 5
 ---
 
-# 関西地方のワークチェアがあるホテル
+# 関西地方のワークチェアがありそうなホテル
 
 ## 京都府
 
 ### ダイワロイネットホテル京都駅前 PREMIER
-- URL: [https://www.daiwaroynet.jp/kyoto-ekimae/](https://www.daiwaroynet.jp/kyoto-ekimae/)
-- [客室](https://www.daiwaroynet.jp/kyoto-ekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kyoto-ekimae](https://www.daiwaroynet.jp/kyoto-ekimae/)
 
 ### ダイワロイネットホテル京都八条口
-- URL: [https://www.daiwaroynet.jp/kyoto-hachi/](https://www.daiwaroynet.jp/kyoto-hachi/)
-- [客室](https://www.daiwaroynet.jp/kyoto-hachi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kyoto-hachi](https://www.daiwaroynet.jp/kyoto-hachi/)
 
 ### ダイワロイネットホテル京都四条烏丸
-- URL: [https://www.daiwaroynet.jp/kyoto-shijo/](https://www.daiwaroynet.jp/kyoto-shijo/)
-- [客室](https://www.daiwaroynet.jp/kyoto-shijo/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kyoto-shijo](https://www.daiwaroynet.jp/kyoto-shijo/)
 
 ### ダイワロイネットホテル京都テラス八条 PREMIER
-- URL: [https://www.daiwaroynet.jp/kyoto-terrace/](https://www.daiwaroynet.jp/kyoto-terrace/)
-- [客室](https://www.daiwaroynet.jp/kyoto-terrace/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kyoto-terrace](https://www.daiwaroynet.jp/kyoto-terrace/)
 
 ## 大阪府
 
 ### コンラッド大阪
-- URL: [https://conrad-osaka.hiltonjapan.co.jp/](https://conrad-osaka.hiltonjapan.co.jp/)
-- [客室](https://conrad-osaka.hiltonjapan.co.jp/rooms/)ページを見ると、[ハーマンミラーのイームズアルミナムチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/)っぽい椅子がある。
+
+- **椅子**: [ハーマンミラー イームズアルミナムチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/) っぽい椅子
+- **公式**: [conrad-osaka.hiltonjapan.co.jp](https://conrad-osaka.hiltonjapan.co.jp/)
 
 ### ヒルトン大阪
-- URL: [https://osaka.hiltonjapan.co.jp/](https://osaka.hiltonjapan.co.jp/)
-- [客室](https://osaka.hiltonjapan.co.jp/rooms/)ページを見ると、[Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/)がある。
+
+- **椅子**: [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/)
+- **公式**: [osaka.hiltonjapan.co.jp](https://osaka.hiltonjapan.co.jp/)
 
 ### ダイワロイネットホテル大阪新梅田
-- URL: [https://www.daiwaroynet.jp/shinumeda/](https://www.daiwaroynet.jp/shinumeda/)
-- [客室](https://www.daiwaroynet.jp/shinumeda/room/)ページのプレミアムビジネスの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（プレミアムビジネス、製品名不明）
+- **公式**: [daiwaroynet.jp/shinumeda](https://www.daiwaroynet.jp/shinumeda/)
 
 ### ダイワロイネットホテル大阪上本町
-- URL: [https://www.daiwaroynet.jp/osaka-uehonmachi/](https://www.daiwaroynet.jp/osaka-uehonmachi/)
-- [客室](https://www.daiwaroynet.jp/osaka-uehonmachi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/osaka-uehonmachi](https://www.daiwaroynet.jp/osaka-uehonmachi/)
 
 ### ダイワロイネットホテル大阪心斎橋
-- URL: [https://www.daiwaroynet.jp/osaka-shinsaibashi/](https://www.daiwaroynet.jp/osaka-shinsaibashi/)
-- [客室](https://www.daiwaroynet.jp/osaka-shinsaibashi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/osaka-shinsaibashi](https://www.daiwaroynet.jp/osaka-shinsaibashi/)
 
 ### ダイワロイネットホテル四ツ橋
-- URL: [https://www.daiwaroynet.jp/yotsubashi/](https://www.daiwaroynet.jp/yotsubashi/)
-- [客室](https://www.daiwaroynet.jp/yotsubashi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/yotsubashi](https://www.daiwaroynet.jp/yotsubashi/)
 
 ### ダイワロイネットホテル堺東
-- URL: [https://www.daiwaroynet.jp/sakaihigashi/](https://www.daiwaroynet.jp/sakaihigashi/)
-- [客室](https://www.daiwaroynet.jp/sakaihigashi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/sakaihigashi](https://www.daiwaroynet.jp/sakaihigashi/)
 
 ### ダイワロイネットホテル大阪北浜
-- URL: [https://www.daiwaroynet.jp/osaka-kitahama/](https://www.daiwaroynet.jp/osaka-kitahama/)
-- [客室](https://www.daiwaroynet.jp/osaka-kitahama/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/osaka-kitahama](https://www.daiwaroynet.jp/osaka-kitahama/)
 
 ## 兵庫県
 
 ### ダイワロイネットホテル神戸三宮
-- URL: [https://www.daiwaroynet.jp/kobesannomiya/](https://www.daiwaroynet.jp/kobesannomiya/)
-- [客室](https://www.daiwaroynet.jp/kobesannomiya/room/)ページのスーペリアダブルの写真を見ると、[イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/)っぽいのが見える。
+
+- **椅子**: [ハーマンミラー イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/) っぽい椅子（スーペリアダブル）
+- **公式**: [daiwaroynet.jp/kobesannomiya](https://www.daiwaroynet.jp/kobesannomiya/)
 
 ### ダイワロイネットホテル神戸三宮 PREMIER
-- URL: [https://www.daiwaroynet.jp/kobe-chuodori/](https://www.daiwaroynet.jp/kobe-chuodori/)
-- [客室](https://www.daiwaroynet.jp/kobe-chuodori/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kobe-chuodori](https://www.daiwaroynet.jp/kobe-chuodori/)
 
 ### ダイワロイネットホテル姫路
-- URL: [https://www.daiwaroynet.jp/himeji/](https://www.daiwaroynet.jp/himeji/)
-- [客室](https://www.daiwaroynet.jp/himeji/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/himeji](https://www.daiwaroynet.jp/himeji/)
 
 ## 和歌山県
 
 ### ダイワロイネットホテル和歌山
-- URL: [https://www.daiwaroynet.jp/wakayama/](https://www.daiwaroynet.jp/wakayama/)
-- [客室](https://www.daiwaroynet.jp/wakayama/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/wakayama](https://www.daiwaroynet.jp/wakayama/)

@@ -1,12 +1,11 @@
 ---
 title: ヒルトン福岡シーホーク パノラミックスイート
 rating: 4
+rating_note: ただしメゾネットタイプと和室フロアは★★★★★
 stayed_at: 2025-11-10
+cover: /images/2025/11/hilton-seahawk-panoramic-IMG_8004.jpg
+og_cover: /images/2025/11/hilton-seahawk-panoramic-IMG_8009.jpg
 ---
-
-## パソコン作業の快適さ
-
-★★★★☆（ただしメゾネットタイプは★★★★★）
 
 ## 部屋情報（公式サイトより）
 - 面積: 53～55㎡
@@ -73,7 +72,7 @@ stayed_at: 2025-11-10
 
 ## 711号室
 
-[ヒルトン福岡 シーホーク パノラミック スイート 2014-03 （HHonors） - 機上の空論](https://www.nein.in/travel/post-191020053344880/)
+[ヒルトン福岡シーホーク パノラミックスイート 2014-03 （HHonors） - 機上の空論](https://www.nein.in/travel/post-191020053344880/)
 
 2020/11/6-8
 
