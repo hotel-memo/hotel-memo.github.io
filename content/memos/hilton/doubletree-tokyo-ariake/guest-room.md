@@ -25,19 +25,14 @@ og_cover: /images/2025/11/doubletree-ariake-1306-IMG_8125.jpg
 
 ## 写真
 
-### 部屋全体
 ![](/images/2025/11/doubletree-ariake-1306-IMG_8122.jpg)
 
-### デスク周り・ワークチェア
 ![](/images/2025/11/doubletree-ariake-1306-IMG_8123.jpg)
 
-### ベッド
 ![](/images/2025/11/doubletree-ariake-1306-IMG_8124.jpg)
 
-### 洗面・バスルーム
 ![](/images/2025/11/doubletree-ariake-1306-IMG_8125.jpg)
 
-### その他
 ![](/images/2025/11/doubletree-ariake-1306-IMG_8126.jpg)
 
 ## 部屋の設備・特徴
