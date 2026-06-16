@@ -1,72 +1,82 @@
 ---
-title: 九州・沖縄地方のワークチェアがあるホテル
+title: 九州・沖縄地方のワークチェアがありそうなホテル
 order: 7
 ---
 
-# 九州・沖縄地方のワークチェアがあるホテル
+# 九州・沖縄地方のワークチェアがありそうなホテル
 
 ## 福岡県
 
 ### ヒルトン福岡シーホーク
-- URL: [https://fukuokaseahawk.hiltonjapan.co.jp/](https://fukuokaseahawk.hiltonjapan.co.jp/)
-- 自分が宿泊した部屋はスイート和洋室を除いてすべて [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/) が配備されており、ほとんどの部屋は Think だと思われるが、[ヒルトンツイン](https://fukuokaseahawk.hiltonjapan.co.jp/rooms/twin)の写真では Think ではない別のチェアが置かれているなど、一部 Think ではない部屋もある。
-- [宿泊メモ](/memos/hilton/hilton-fukuoka-seahawk/)
+
+- **椅子**: [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/) （スイート和洋室を除き宿泊済みの部屋はすべて Think、ただし [ヒルトンツイン](https://fukuokaseahawk.hiltonjapan.co.jp/rooms/twin) など、ホテル掲載画像を見ると一部 Think ではない部屋もある）
+- **公式**: [fukuokaseahawk.hiltonjapan.co.jp](https://fukuokaseahawk.hiltonjapan.co.jp/)
+- **メモ**: [宿泊メモを読む →](/memos/hilton/hilton-fukuoka-seahawk/)
 
 ### 博多エクセルホテル東急
-- URL: [https://www.tokyuhotels.co.jp/hakata-e/](https://www.tokyuhotels.co.jp/hakata-e/)
-- [客室](https://www.tokyuhotels.co.jp/hakata-e/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [tokyuhotels.co.jp/hakata-e](https://www.tokyuhotels.co.jp/hakata-e/)
 
 ### 博多東急REIホテル
-- URL: [https://www.tokyuhotels.co.jp/hakata-r/](https://www.tokyuhotels.co.jp/hakata-r/)
-- [客室](https://www.tokyuhotels.co.jp/hakata-r/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [tokyuhotels.co.jp/hakata-r](https://www.tokyuhotels.co.jp/hakata-r/)
 
 ### ダイワロイネットホテル博多祇園
-- URL: [https://www.daiwaroynet.jp/hakatagion/](https://www.daiwaroynet.jp/hakatagion/)
-- [客室](https://www.daiwaroynet.jp/hakatagion/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
-- [宿泊メモ](/memos/daiwa-roynet/daiwa-roynet-hakata-gion/standard-double/)
-	- 椅子以前の問題でインターネット接続が不安定で仕事で使うには厳しかった。改善されることを願う。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/hakatagion](https://www.daiwaroynet.jp/hakatagion/)
+- **メモ**: [宿泊メモを読む →](/memos/daiwa-roynet/daiwa-roynet-hakata-gion/standard-double/)
 
 ### ダイワロイネットホテル博多冷泉
-- URL: [https://www.daiwaroynet.jp/hakata-reisen/](https://www.daiwaroynet.jp/hakata-reisen/)
-- [客室](https://www.daiwaroynet.jp/hakata-reisen/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/hakata-reisen](https://www.daiwaroynet.jp/hakata-reisen/)
 
 ### ダイワロイネットホテル小倉駅前
-- URL: [https://www.daiwaroynet.jp/kokuraekimae/](https://www.daiwaroynet.jp/kokuraekimae/)
-- [客室](https://www.daiwaroynet.jp/kokuraekimae/room/)ページの写真を見ると、ワークチェアが写っている。
-- [宿泊メモ](/memos/daiwa-roynet/daiwa-roynet-kokura/superior-double/)
-	- イトーキ エピオスチェア（肘掛けなし）
-	- インターネット速度は出るが接続が不安定
+
+- **椅子**: イトーキ エピオスチェア（肘掛けなし、宿泊時に確認）
+- **公式**: [daiwaroynet.jp/kokuraekimae](https://www.daiwaroynet.jp/kokuraekimae/)
+- **メモ**: [宿泊メモを読む →](/memos/daiwa-roynet/daiwa-roynet-kokura/superior-double/)
 
 ### DEL style 福岡西中洲
-- URL: [https://www.daiwaroynet.jp/fukuoka-nishinakasu/](https://www.daiwaroynet.jp/fukuoka-nishinakasu/)
-- [客室](https://www.daiwaroynet.jp/fukuoka-nishinakasu/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/fukuoka-nishinakasu](https://www.daiwaroynet.jp/fukuoka-nishinakasu/)
 
 ## 熊本県
 
 ### ダイワロイネットホテル熊本
-- URL: [https://www.daiwaroynet.jp/kumamoto/](https://www.daiwaroynet.jp/kumamoto/)
-- [客室](https://www.daiwaroynet.jp/kumamoto/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kumamoto](https://www.daiwaroynet.jp/kumamoto/)
 
 ### ダイワロイネットホテル熊本銀座通り PREMIER
-- URL: [https://www.daiwaroynet.jp/kumamoto-ginzadori/](https://www.daiwaroynet.jp/kumamoto-ginzadori/)
-- [客室](https://www.daiwaroynet.jp/kumamoto-ginzadori/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kumamoto-ginzadori](https://www.daiwaroynet.jp/kumamoto-ginzadori/)
 
 ## 大分県
 
 ### ダイワロイネットホテル大分
-- URL: [https://www.daiwaroynet.jp/oita/](https://www.daiwaroynet.jp/oita/)
-- [客室](https://www.daiwaroynet.jp/oita/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/oita](https://www.daiwaroynet.jp/oita/)
 
 ## 沖縄県
 
 ### ヒルトン沖縄北谷リゾート
-- URL: [https://chatan.hiltonjapan.co.jp/](https://chatan.hiltonjapan.co.jp/)
-- [客室](https://chatan.hiltonjapan.co.jp/rooms/)ページを見ると、[Vitra Softshell Chair](https://www.vitra.com/ja-jp/product/details/softshell-chair-five-star-base)っぽい椅子がある。
+
+- **椅子**: [Vitra Softshell Chair](https://www.vitra.com/ja-jp/product/details/softshell-chair-five-star-base) っぽい椅子
+- **公式**: [chatan.hiltonjapan.co.jp](https://chatan.hiltonjapan.co.jp/)
 
 ### ダイワロイネットホテル那覇おもろまち
-- URL: [https://www.daiwaroynet.jp/omoromachi/](https://www.daiwaroynet.jp/omoromachi/)
-- [客室](https://www.daiwaroynet.jp/omoromachi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/omoromachi](https://www.daiwaroynet.jp/omoromachi/)
 
 ### ダイワロイネットホテル沖縄県庁前
-- URL: [https://www.daiwaroynet.jp/okinawa-kenchomae/](https://www.daiwaroynet.jp/okinawa-kenchomae/)
-- [客室](https://www.daiwaroynet.jp/okinawa-kenchomae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/okinawa-kenchomae](https://www.daiwaroynet.jp/okinawa-kenchomae/)

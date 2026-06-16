@@ -1,32 +1,93 @@
 ---
+import { getCollection } from "astro:content"
 import Base from "../layouts/Base.astro"
+import { byStayedAtDesc, memoSlug } from "../lib/memo"
+
+const memos = (await getCollection("memos"))
+  .filter((m) => !m.data.draft)
+  .filter((m) => m.id.startsWith("memos/"))
+const recent = memos
+  .filter((m) => m.data.stayed_at)
+  .sort(byStayedAtDesc)
+  .slice(0, 5)
+
+const formatYM = (d: Date) =>
+  `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}`
+
+const hints = [
+  "ヒルトン",
+  "アーロンチェア",
+  "Steelcase Think",
+  "オカムラ",
+  "Wi-Fi",
+  "高円寺",
+  "福岡",
+  "エグゼクティブ",
+]
 ---
 
 <Base title="検索" description="サイト内検索">
   <div data-pagefind-ignore="all">
-    <nav class="breadcrumb">
-      <a href="/">Hotel Memo</a>
-    </nav>
-    <h1>検索</h1>
-    <p>キーワードでサイト内を検索できます。</p>
+    <div class="search-kicker">サイト内検索</div>
+    <h1 class="search-h1">何を探しますか？</h1>
+    <p class="search-lede">ホテル名・椅子ブランド・地名・設備など、どれでも。</p>
+
     <div id="search"></div>
+
+    <p class="hint-label">探されるキーワードの例</p>
+    <div class="hint-chips">
+      {hints.map((h) => <button type="button" data-q={h}>{h}</button>)}
+    </div>
+
+    <div class="search-empty">
+      <span class="section-label">最近の宿泊メモ</span>
+      <ul class="recent-list recent-list--thumb">
+        {
+          recent.map((m) => (
+            <li>
+              {m.data.cover && (
+                <img class="recent-thumb" src={m.data.cover} alt="" />
+              )}
+              <span class="recent-date">{formatYM(m.data.stayed_at!)}</span>
+              <span class="recent-title">
+                <a href={`/${memoSlug(m.id)}/`}>{m.data.title}</a>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
+
   <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
   <script
     src="/pagefind/pagefind-ui.js"
     is:inline
-    onload={`new PagefindUI({ element: "#search", showImages: false, resetStyles: false })`}
+    onload={`
+      new PagefindUI({
+        element: "#search",
+        showImages: false,
+        resetStyles: true,
+        showSubResults: false,
+      });
+      const attach = () => {
+        const input = document.querySelector('.pagefind-ui__search-input');
+        if (!input) { setTimeout(attach, 100); return; }
+        document.querySelectorAll('.hint-chips button').forEach((b) => {
+          b.addEventListener('click', () => {
+            input.value = b.dataset.q;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+            input.focus();
+          });
+        });
+        const empty = document.querySelector('.search-empty');
+        const sync = () => {
+          empty.style.display = input.value.trim() ? 'none' : '';
+        };
+        input.addEventListener('input', sync);
+        sync();
+      };
+      attach();
+    `}
   ></script>
 </Base>
-
-<style>
-  :global(.pagefind-ui) {
-    --pagefind-ui-primary: var(--accent);
-    --pagefind-ui-text: var(--text);
-    --pagefind-ui-background: var(--bg);
-    --pagefind-ui-border: var(--line);
-    --pagefind-ui-tag: var(--highlight);
-    --pagefind-ui-border-radius: var(--radius);
-    --pagefind-ui-font: inherit;
-  }
-</style>

@@ -2,11 +2,11 @@
 title: 羽田エクセルホテル東急 スーペリアシングル
 rating: 2
 stayed_at: 2026-02-25
+cover: /images/2026/02/IMG_8448.jpg
+og_cover: /images/2026/02/IMG_8449.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★☆☆☆
 
 WiFiが32Mbpsとあまり速くない。椅子はラウンジチェアでワークチェアではない。
 

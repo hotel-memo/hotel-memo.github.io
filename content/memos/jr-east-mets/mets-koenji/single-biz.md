@@ -2,11 +2,11 @@
 title: JR東日本ホテルメッツ高円寺 Single Biz style
 rating: 3
 stayed_at: 2025-10-26
+cover: /images/2025/10/mets-koenji-IMG_7945.jpg
+og_cover: /images/2025/10/mets-koenji-IMG_7945.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★★☆☆
 
 - 椅子がワークチェアではあるが、自分にはあわないようで少し腰が痛い
 - デスクが狭い
@@ -19,7 +19,7 @@ stayed_at: 2025-10-26
 - ベッド: 140cm幅（1台）
 - 利用人数: 1～2名
 - 喫煙/禁煙: 禁煙
-- 設備: リクライニング機能付きワークチェア、加湿空気清浄機 ほか
+- 設備: リクライニング機能付きワークチェア、加湿空気清浄機ほか
 - 参照元: https://www.hotelmets.jp/koenji/stay.html （取得日: 2025-09-07）
 
 ----

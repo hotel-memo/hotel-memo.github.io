@@ -2,12 +2,11 @@
 title: 吉祥寺東急REIホテル スーペリアシングル
 rating: 3
 stayed_at: 2025-09-05
+cover: /images/2025/09/IMG_7681.jpg
+og_cover: /images/2025/09/IMG_7681.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★★☆☆
-
 
 ## 部屋情報（公式サイトより）
 

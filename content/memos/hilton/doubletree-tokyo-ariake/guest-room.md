@@ -2,11 +2,11 @@
 title: ダブルツリーbyヒルトン東京有明 ゲストルーム
 rating: 5
 stayed_at: 2025-11-17
+cover: /images/2025/11/doubletree-ariake-1306-IMG_8122.jpg
+og_cover: /images/2025/11/doubletree-ariake-1306-IMG_8125.jpg
 ---
 
 ## パソコン作業の快適さ
-
-★★★★★
 
 ## 宿泊日
 2025年11月17日〜20日

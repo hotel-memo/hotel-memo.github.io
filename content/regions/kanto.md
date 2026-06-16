@@ -1,150 +1,173 @@
 ---
-title: 関東地方のワークチェアがあるホテル
+title: 関東地方のワークチェアがありそうなホテル
 order: 3
 ---
 
-# 関東地方のワークチェアがあるホテル
+# 関東地方のワークチェアがありそうなホテル
 
 ## 茨城県
 
 ### ダイワロイネットホテル水戸
-- URL: [https://www.daiwaroynet.jp/mito/](https://www.daiwaroynet.jp/mito/)
-- [客室](https://www.daiwaroynet.jp/mito/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/mito](https://www.daiwaroynet.jp/mito/)
 
 ### ダイワロイネットホテルつくば
-- URL: [https://www.daiwaroynet.jp/tsukuba/](https://www.daiwaroynet.jp/tsukuba/)
-- [客室](https://www.daiwaroynet.jp/tsukuba/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/tsukuba](https://www.daiwaroynet.jp/tsukuba/)
 
 ## 栃木県
 
 ### ダイワロイネットホテル宇都宮
-- URL: [https://www.daiwaroynet.jp/utsunomiya/](https://www.daiwaroynet.jp/utsunomiya/)
-- [客室](https://www.daiwaroynet.jp/utsunomiya/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/utsunomiya](https://www.daiwaroynet.jp/utsunomiya/)
 
 ## 埼玉県
 
 ### ダイワロイネットホテル大宮西口
-- URL: [https://www.daiwaroynet.jp/omiya-nishiguchi/](https://www.daiwaroynet.jp/omiya-nishiguchi/)
-- [客室](https://www.daiwaroynet.jp/omiya-nishiguchi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/omiya-nishiguchi](https://www.daiwaroynet.jp/omiya-nishiguchi/)
 
 ## 東京都
 
 ### 羽田エクセルホテル東急
-- URL: [https://www.tokyuhotels.co.jp/haneda-e/index.html](https://www.tokyuhotels.co.jp/haneda-e/index.html)
-- プレミアと呼ばれるタイプの部屋には[Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/)がありそう。
-- [宿泊メモ](/memos/tokyu/haneda-excel/superior-single/)
+
+- **椅子**: [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/) （プレミアタイプの部屋）
+- **公式**: [tokyuhotels.co.jp/haneda-e](https://www.tokyuhotels.co.jp/haneda-e/index.html)
+- **メモ**: [宿泊メモを読む →](/memos/tokyu/haneda-excel/superior-single/)
 
 ### JR東日本ホテルメッツ 高円寺
-- URL: [https://www.hotelmets.jp/koenji/](https://www.hotelmets.jp/koenji/)
-- Biz styleというタイプの部屋には[オカムラのLives Work Chair](https://lifestylestore.okamura.co.jp/pages/lives-work-chair)がある。
-- [宿泊メモ](/memos/jr-east-mets/mets-koenji/single-biz/)
+
+- **椅子**: [オカムラ Lives Work Chair](https://lifestylestore.okamura.co.jp/pages/lives-work-chair) （Biz styleタイプ）
+- **公式**: [hotelmets.jp/koenji](https://www.hotelmets.jp/koenji/)
+- **メモ**: [宿泊メモを読む →](/memos/jr-east-mets/mets-koenji/single-biz/)
 
 ### ダブルツリーbyヒルトン東京有明
-- URL: [https://doubletree-tokyo-ariake.hiltonjapan.co.jp/](https://doubletree-tokyo-ariake.hiltonjapan.co.jp/)
-- [オカムラのmode](https://www.okamura.co.jp/office/special_site/product/mode/)がおそらく全室配備。
-- [宿泊メモ](/memos/hilton/doubletree-tokyo-ariake/guest-room-high-floor/)
+
+- **椅子**: [オカムラ mode](https://www.okamura.co.jp/office/special_site/product/mode/) （おそらく全室配備）
+- **公式**: [doubletree-tokyo-ariake.hiltonjapan.co.jp](https://doubletree-tokyo-ariake.hiltonjapan.co.jp/)
+- **メモ**: [宿泊メモを読む →](/memos/hilton/doubletree-tokyo-ariake/guest-room-high-floor/)
 
 ### ヒルトン東京
-- URL: [https://tokyo.hiltonjapan.co.jp/](https://tokyo.hiltonjapan.co.jp/)
-- [客室の写真](https://tokyo.hiltonjapan.co.jp/rooms/)を見る限り、ヒルトンルームは[Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/)が配備されてそう。
-- それ以外の部屋は[Vitra Softshell Chair](https://www.vitra.com/ja-jp/product/details/softshell-chair-five-star-base)っぽく見える。
-	- Vitra Softshell Chairはワークチェアではない
-- ジュニアスイートエグゼクティブキングはVitra Softshell Cairであることを確認
-	- 👉 [宿泊メモ](/memos/hilton/hilton-tokyo/)
+
+- **椅子**: [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/)（ヒルトンルーム） ／ [Vitra Softshell Chair](https://www.vitra.com/ja-jp/product/details/softshell-chair-five-star-base)（その他 ※ワークチェアではない）
+- **公式**: [tokyo.hiltonjapan.co.jp](https://tokyo.hiltonjapan.co.jp/)
+- **メモ**: [宿泊メモを読む →](/memos/hilton/hilton-tokyo/)
 
 ### 吉祥寺東急REIホテル
-- URL: [https://www.tokyuhotels.co.jp/kichijoji-r/](https://www.tokyuhotels.co.jp/kichijoji-r/)
-- [客室の写真](https://www.tokyuhotels.co.jp/kichijoji-r/room/)にはオフィスチェアっぽいものが写っているが、実際に宿泊したスーペリアシングル（524号室）には写真とは異なる[ニトリのオフィスチェア(9-190 DGY)](https://www.nitori-net.jp/ec/product/3580706s/)が配備されていた。
-- [宿泊メモ](/memos/tokyu/kichijoji-rei/)
+
+- **椅子**: [ニトリ オフィスチェア 9-190 DGY](https://www.nitori-net.jp/ec/product/3580706s/) （スーペリアシングル524号室で確認、公式サイトの写真とは異なる）
+- **公式**: [tokyuhotels.co.jp/kichijoji-r](https://www.tokyuhotels.co.jp/kichijoji-r/)
+- **メモ**: [宿泊メモを読む →](/memos/tokyu/kichijoji-rei/)
 
 ### コンラッド東京
-- URL: [https://conrad-tokyo.hiltonjapan.co.jp/](https://conrad-tokyo.hiltonjapan.co.jp/)
-- [客室のご案内ページ](https://conrad-tokyo.hiltonjapan.co.jp/rooms/)を見ると、[ハーマンミラーのイームズエグゼクティブ](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-executive-chairs/)っぽい椅子が見える。
+
+- **椅子**: [ハーマンミラー イームズエグゼクティブ](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-executive-chairs/) っぽい椅子
+- **公式**: [conrad-tokyo.hiltonjapan.co.jp](https://conrad-tokyo.hiltonjapan.co.jp/)
 
 ### ザ・ゲートホテル両国 by HULIC
-- URL: [https://www.gate-hotel.jp/ryogoku/?ja](https://www.gate-hotel.jp/ryogoku/?ja)
-- [Modest](https://www.gate-hotel.jp/ryogoku/rooms/modest.html)というタイプの部屋には[ハーマンミラーのアーロンチェア](https://hermanmiller.co.jp/products/aeron-graphite?variant=42197596471468)がある。
+
+- **椅子**: [ハーマンミラー アーロンチェア](https://hermanmiller.co.jp/products/aeron-graphite?variant=42197596471468) （Modestタイプ）
+- **公式**: [gate-hotel.jp/ryogoku](https://www.gate-hotel.jp/ryogoku/?ja)
 
 ### ダイワロイネットホテル新橋
-- URL: [https://www.daiwaroynet.jp/shinbashi/](https://www.daiwaroynet.jp/shinbashi/)
-- [客室](https://www.daiwaroynet.jp/shinbashi/room/)ページの写真を見ると、スタンダードダブルルームのデスクタイプには、ワークチェアがあるっぽい。
-- メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（スタンダードダブルのデスクタイプ、製品名不明）
+- **公式**: [daiwaroynet.jp/shinbashi](https://www.daiwaroynet.jp/shinbashi/)
 
 ### ザ・ゲートホテル東京
-- URL: [https://www.gate-hotel.jp/tokyo/](https://www.gate-hotel.jp/tokyo/)
-- [Modest](https://www.gate-hotel.jp/tokyo/rooms/modest.html)というタイプの部屋、写真を見る限り[Vitra ID Trim](https://www.vitra.com/ja-jp/product/details/id-trim)っぽい。
+
+- **椅子**: [Vitra ID Trim](https://www.vitra.com/ja-jp/product/details/id-trim) っぽい椅子（Modestタイプ）
+- **公式**: [gate-hotel.jp/tokyo](https://www.gate-hotel.jp/tokyo/)
 
 ### ダイワロイネットホテル東京京橋 PREMIER
-- URL: [https://www.daiwaroynet.jp/tokyo-kyobashi/](https://www.daiwaroynet.jp/tokyo-kyobashi/)
-- [客室](https://www.daiwaroynet.jp/tokyo-kyobashi/room/)ページを見ると、肘掛けのあるワークチェアっぽい椅子が見える。
-- メーカーや製品名は不明。
+
+- **椅子**: 肘掛けのあるワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/tokyo-kyobashi](https://www.daiwaroynet.jp/tokyo-kyobashi/)
 
 ### ダイワロイネットホテル銀座
-- URL: [https://www.daiwaroynet.jp/ginza/](https://www.daiwaroynet.jp/ginza/)
-- [客室](https://www.daiwaroynet.jp/ginza/room/)ページの写真を見ると、[イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/)っぽいのが見える。
+
+- **椅子**: [ハーマンミラー イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/) っぽい椅子
+- **公式**: [daiwaroynet.jp/ginza](https://www.daiwaroynet.jp/ginza/)
 
 ### ダイワロイネットホテル東京赤羽
-- URL: [https://www.daiwaroynet.jp/akabane/](https://www.daiwaroynet.jp/akabane/)
-- [客室](https://www.daiwaroynet.jp/akabane/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/akabane](https://www.daiwaroynet.jp/akabane/)
 
 ### ダイワロイネットホテル西新宿 PREMIER
-- URL: [https://www.daiwaroynet.jp/nishi-shinjuku/](https://www.daiwaroynet.jp/nishi-shinjuku/)
-- [客室](https://www.daiwaroynet.jp/nishi-shinjuku/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/nishi-shinjuku](https://www.daiwaroynet.jp/nishi-shinjuku/)
 
 ### ダイワロイネットホテル池袋東口
-- URL: [https://www.daiwaroynet.jp/ikebukuro-higashiguchi/](https://www.daiwaroynet.jp/ikebukuro-higashiguchi/)
-- [客室](https://www.daiwaroynet.jp/ikebukuro-higashiguchi/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/ikebukuro-higashiguchi](https://www.daiwaroynet.jp/ikebukuro-higashiguchi/)
 
 ### ダイワロイネットホテル東京大崎
-- URL: [https://www.daiwaroynet.jp/osaki/](https://www.daiwaroynet.jp/osaki/)
-- [客室](https://www.daiwaroynet.jp/osaki/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/osaki](https://www.daiwaroynet.jp/osaki/)
 
 ### ダイワロイネットホテル銀座 PREMIER
-- URL: [https://www.daiwaroynet.jp/ginza-premier/](https://www.daiwaroynet.jp/ginza-premier/)
-- [客室](https://www.daiwaroynet.jp/ginza-premier/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/ginza-premier](https://www.daiwaroynet.jp/ginza-premier/)
 
 ## 千葉県
 
 ### ヒルトン成田
-- URL: [https://www.hiltonnarita.jp/](https://www.hiltonnarita.jp/)
-- いくつかの部屋タイプには[Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/)がある。
+
+- **椅子**: [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/) （いくつかの部屋タイプ）
+- **公式**: [hiltonnarita.jp](https://www.hiltonnarita.jp/)
 
 ### ダイワロイネットホテル千葉中央
-- URL: [https://www.daiwaroynet.jp/chiba-chuo/](https://www.daiwaroynet.jp/chiba-chuo/)
-- [客室](https://www.daiwaroynet.jp/chiba-chuo/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/chiba-chuo](https://www.daiwaroynet.jp/chiba-chuo/)
 
 ### ダイワロイネットホテル千葉駅前
-- URL: [https://www.daiwaroynet.jp/chibaekimae/](https://www.daiwaroynet.jp/chibaekimae/)
-- [客室](https://www.daiwaroynet.jp/chibaekimae/room/)ページの写真を見ると、[イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/)っぽいのが見える。
+
+- **椅子**: [ハーマンミラー イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/) っぽい椅子
+- **公式**: [daiwaroynet.jp/chibaekimae](https://www.daiwaroynet.jp/chibaekimae/)
 
 ## 神奈川県
 
 ### リッチモンドホテル プレミア武蔵小杉
-- URL: [https://richmondhotel.jp/musashikosugi/](https://richmondhotel.jp/musashikosugi/)
-- [客室紹介ページ](https://richmondhotel.jp/musashikosugi/rooms/)を見ると「Steelcase社製ワーキングチェア」と書かれている。
-- 写真をみるとヘッドレストつきのThinkっぽい。
+
+- **椅子**: [Steelcase Think](https://www.steelcase.com/asia-ja/products/office-chairs/think/) っぽい椅子（公式は「Steelcase社製ワーキングチェア」と記載）
+- **公式**: [richmondhotel.jp/musashikosugi](https://richmondhotel.jp/musashikosugi/)
 
 ### HOTEL ARU KSP
-- URL: [https://hotel-ksp.com/](https://hotel-ksp.com/)
-- [客室一覧ページ](https://hotel-ksp.com/accommodation/)を見ると、Superior TwinやLiving Twinにはワークチェアっぽいのが見えるが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（Superior Twin / Living Twin、製品名不明）
+- **公式**: [hotel-ksp.com](https://hotel-ksp.com/)
 
 ### スマイルホテル湘南藤沢
-- URL: [https://smile-hotels.com/hotels/show/shonanfujisawa](https://smile-hotels.com/hotels/show/shonanfujisawa)
-- [部屋の写真](https://smile-hotels.com/hotels/show/shonanfujisawa#box_room)を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
-- 肘掛けはなさそう。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（肘掛けなし、製品名不明）
+- **公式**: [smile-hotels.com/shonanfujisawa](https://smile-hotels.com/hotels/show/shonanfujisawa)
 
 ### ダイワロイネットホテル新横浜
-- URL: [https://www.daiwaroynet.jp/shin-yokohama/](https://www.daiwaroynet.jp/shin-yokohama/)
-- [客室](https://www.daiwaroynet.jp/shin-yokohama/room/)ページを見ると、肘掛けのないワークチェアっぽい椅子が見えるが、メーカーや製品名は不明。
+
+- **椅子**: 肘掛けのないワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/shin-yokohama](https://www.daiwaroynet.jp/shin-yokohama/)
 
 ### ダイワロイネットホテル横浜公園
-- URL: [https://www.daiwaroynet.jp/yokohama-koen/](https://www.daiwaroynet.jp/yokohama-koen/)
-- [客室](https://www.daiwaroynet.jp/yokohama-koen/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/yokohama-koen](https://www.daiwaroynet.jp/yokohama-koen/)
 
 ### ダイワロイネットホテル横浜関内
-- URL: [https://www.daiwaroynet.jp/yokohama-kannai/](https://www.daiwaroynet.jp/yokohama-kannai/)
-- [客室](https://www.daiwaroynet.jp/yokohama-kannai/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/yokohama-kannai](https://www.daiwaroynet.jp/yokohama-kannai/)
 
 ### ダイワロイネットホテル川崎
-- URL: [https://www.daiwaroynet.jp/kawasaki/](https://www.daiwaroynet.jp/kawasaki/)
-- [客室](https://www.daiwaroynet.jp/kawasaki/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/kawasaki](https://www.daiwaroynet.jp/kawasaki/)

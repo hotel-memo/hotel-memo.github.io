@@ -1,0 +1,104 @@
+---
+import { getCollection } from "astro:content"
+import Base from "../../../layouts/Base.astro"
+import { byRatingDesc, chainNameMap, extractH1 } from "../../../lib/memo"
+
+export async function getStaticPaths() {
+  const hotels = (await getCollection("hotels")).filter((h) =>
+    h.id.startsWith("memos/"),
+  )
+  const chains = new Set<string>()
+  for (const h of hotels) {
+    const chain = h.id.split("/")[1]
+    if (chain) chains.add(chain)
+  }
+  return [...chains].map((chain) => ({ params: { chain } }))
+}
+
+const { chain } = Astro.params
+
+const allMemos = (await getCollection("memos"))
+  .filter((m) => !m.data.draft)
+  .filter((m) => m.id.startsWith("memos/"))
+
+const hotels = (await getCollection("hotels"))
+  .filter((h) => !h.data.draft)
+  .filter((h) => h.id.startsWith(`memos/${chain}/`))
+  .map((h) => {
+    const name = h.data.title ?? extractH1(h.body) ?? h.id
+    const hotelMemos = allMemos
+      .filter((m) => m.id.startsWith(h.id + "/"))
+      .sort(byRatingDesc)
+    const bestRating = hotelMemos[0]?.data.rating ?? 0
+    const thumbMemo = hotelMemos.find((m) => m.data.cover)
+    const cover = thumbMemo?.data.cover
+    return {
+      slug: h.id,
+      name,
+      memoCount: hotelMemos.length,
+      bestRating,
+      cover,
+    }
+  })
+  .sort((a, b) => {
+    if (b.bestRating !== a.bestRating) return b.bestRating - a.bestRating
+    if (b.memoCount !== a.memoCount) return b.memoCount - a.memoCount
+    return a.name.localeCompare(b.name, "ja")
+  })
+
+const chainName = chainNameMap[chain!] ?? chain
+const totalMemos = hotels.reduce((sum, h) => sum + h.memoCount, 0)
+const maxRating = hotels.reduce((max, h) => Math.max(max, h.bestRating), 0)
+---
+
+<Base
+  title={`${chainName} のホテル`}
+  ogImage={`/og/memos/${chain}.png`}
+>
+  <p class="chain-kicker">
+    <a href="/">← Hotel × Deskwork</a>
+  </p>
+  <h1>{chainName}</h1>
+  <div class="chain-summary">
+    <span><strong>{hotels.length}</strong>ホテル</span>
+    <span><strong>{totalMemos}</strong>件のメモ</span>
+    {
+      maxRating > 0 && (
+        <span>
+          最高{" "}
+          <span class="stars">
+            {"★".repeat(maxRating) + "☆".repeat(5 - maxRating)}
+          </span>
+        </span>
+      )
+    }
+  </div>
+
+  <span class="section-label">宿泊したホテル（{hotels.length}件）</span>
+  <ul class="chain-hotels">
+    {
+      hotels.map((h) => (
+        <li>
+          <a href={`/${h.slug}/`} class="chain-hotel">
+            {h.cover ? (
+              <img class="thumb" src={h.cover} alt="" />
+            ) : (
+              <span class="thumb" aria-hidden="true" />
+            )}
+            <div class="info">
+              <div class="name">{h.name}</div>
+              <div class="meta">
+                <span class="stars">
+                  <span class="on">{"★".repeat(h.bestRating)}</span>
+                  <span class="off">{"☆".repeat(5 - h.bestRating)}</span>
+                </span>
+                {h.bestRating === 5 && <span>最高</span>}
+              </div>
+            </div>
+            <span class="count">{h.memoCount}件</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

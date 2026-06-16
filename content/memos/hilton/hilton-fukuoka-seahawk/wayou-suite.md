@@ -2,11 +2,11 @@
 title: ヒルトン福岡シーホーク スイート和洋室
 rating: 2
 stayed_at: 2020-12-17
+cover: /images/2025/08/1ACE953F-19A0-4D32-98AB-9A92741AED39.jpeg
+og_cover: /images/2025/08/ADFE9A4D-F77E-42B9-B0FB-B376B9D5C403.jpeg
 ---
 
 ## パソコン作業の快適さ
-
-★★☆☆☆
 
 ## 部屋情報（公式サイトより）
 

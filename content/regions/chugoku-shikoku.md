@@ -1,44 +1,51 @@
 ---
-title: 中国・四国地方のワークチェアがあるホテル
+title: 中国・四国地方のワークチェアがありそうなホテル
 order: 6
 ---
 
-# 中国・四国地方のワークチェアがあるホテル
+# 中国・四国地方のワークチェアがありそうなホテル
 
 ## 広島県
 
 ### ダイワロイネットホテル広島
-- URL: [https://www.daiwaroynet.jp/hiroshima/](https://www.daiwaroynet.jp/hiroshima/)
-- [客室](https://www.daiwaroynet.jp/hiroshima/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/hiroshima](https://www.daiwaroynet.jp/hiroshima/)
 
 ### ダイワロイネットホテル広島駅前
-- URL: [https://www.daiwaroynet.jp/hiroshima-ekimae/](https://www.daiwaroynet.jp/hiroshima-ekimae/)
-- [客室](https://www.daiwaroynet.jp/hiroshima-ekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/hiroshima-ekimae](https://www.daiwaroynet.jp/hiroshima-ekimae/)
 
 ### ダイワロイネットホテル福山駅前
-- URL: [https://www.daiwaroynet.jp/fukuyama-ekimae/](https://www.daiwaroynet.jp/fukuyama-ekimae/)
-- [客室](https://www.daiwaroynet.jp/fukuyama-ekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/fukuyama-ekimae](https://www.daiwaroynet.jp/fukuyama-ekimae/)
 
 ## 岡山県
 
 ### ダイワロイネットホテル岡山駅前
-- URL: [https://www.daiwaroynet.jp/okayamaekimae/](https://www.daiwaroynet.jp/okayamaekimae/)
-- [客室](https://www.daiwaroynet.jp/okayamaekimae/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/okayamaekimae](https://www.daiwaroynet.jp/okayamaekimae/)
 
 ## 愛媛県
 
 ### ダイワロイネットホテル松山
-- URL: [https://www.daiwaroynet.jp/matsuyama/](https://www.daiwaroynet.jp/matsuyama/)
-- [客室](https://www.daiwaroynet.jp/matsuyama/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/matsuyama](https://www.daiwaroynet.jp/matsuyama/)
 
 ## 香川県
 
 ### ダイワロイネットホテル高松
-- URL: [https://www.daiwaroynet.jp/takamatsu/](https://www.daiwaroynet.jp/takamatsu/)
-- [客室](https://www.daiwaroynet.jp/takamatsu/room/)ページの写真を見ると、ワークチェアっぽいものが写っているが、メーカーや製品名は不明。
+
+- **椅子**: 客室写真にワークチェアらしき椅子（製品名不明）
+- **公式**: [daiwaroynet.jp/takamatsu](https://www.daiwaroynet.jp/takamatsu/)
 
 ## 徳島県
 
 ### ダイワロイネットホテル徳島駅前
-- URL: [https://www.daiwaroynet.jp/tokushimaekimae/](https://www.daiwaroynet.jp/tokushimaekimae/)
-- [客室](https://www.daiwaroynet.jp/tokushimaekimae/room/)ページの写真を見ると、[イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/)っぽいのが見える。
+
+- **椅子**: [ハーマンミラー イームズアルミナムグループ マネジメントチェア](https://www.hermanmiller.com/ja_jp/products/seating/office-chairs/eames-aluminum-group-chairs/) っぽい椅子
+- **公式**: [daiwaroynet.jp/tokushimaekimae](https://www.daiwaroynet.jp/tokushimaekimae/)

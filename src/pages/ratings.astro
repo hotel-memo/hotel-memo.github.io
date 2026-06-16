@@ -10,9 +10,8 @@ const title = entry.data.title ?? extractH1(entry.body) ?? "パソコン作業�
 ---
 
 <Base title={title} ogImage="/og/pages/ratings.png">
-  <nav class="breadcrumb">
-    <a href="/">Hotel × Deskwork</a>
-  </nav>
   <h1>{title}</h1>
-  <Content />
+  <div class="ratings">
+    <Content />
+  </div>
 </Base>
