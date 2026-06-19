@@ -1,7 +1,7 @@
 ---
 title: ヒルトン福岡シーホーク ツインプレミアムデラックス
 rating: 5
-stayed_at: 2025-09-23
+stayed_at: 2026-06-18
 cover: /images/2025/09/hilton-seahawk-1728-IMG_7801.jpg
 og_cover: /images/2025/09/hilton-seahawk-1728-IMG_7802.jpg
 ---
@@ -17,6 +17,57 @@ og_cover: /images/2025/09/hilton-seahawk-1728-IMG_7802.jpg
 - 喫煙/禁煙: 禁煙
 - 備考: 高層階（17～29F）に位置
 - 参照元: https://fukuokaseahawk.hiltonjapan.co.jp/rooms/twin_premium_deluxe （取得日: 2025-09-07）
+
+----
+
+## 2826号室
+
+2026/6/18-21
+
+- 2028号室からの部屋交換（エアコンのかび臭のため）
+- 28階タワー側（2028号室は20階ドーム側）
+- ネスプレッソあり
+- アメニティに化粧水はない
+
+![](/images/2026/06/IMG_8780.jpg)
+
+![](/images/2026/06/IMG_8781.jpg)
+
+![](/images/2026/06/IMG_8782.jpg)
+
+![](/images/2026/06/IMG_8783.jpg)
+
+![](/images/2026/06/IMG_8784.jpg)
+
+![](/images/2026/06/IMG_8785.jpg)
+
+![](/images/2026/06/IMG_8791.jpg)
+
+----
+
+## 2028号室
+
+2026/6/18
+
+- エアコンの風がかび臭いため、初日に部屋交換（実質0泊）
+- ネスプレッソあり
+- アメニティに化粧水はない
+
+![](/images/2026/06/IMG_8771.jpg)
+
+![](/images/2026/06/IMG_8772.jpg)
+
+![](/images/2026/06/IMG_8773.jpg)
+
+![](/images/2026/06/IMG_8774.jpg)
+
+![](/images/2026/06/IMG_8775.jpg)
+
+![](/images/2026/06/IMG_8776.jpg)
+
+![](/images/2026/06/IMG_8777.jpg)
+
+![](/images/2026/06/IMG_8778.jpg)
 
 ----
 
