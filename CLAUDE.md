@@ -98,4 +98,3 @@ npm run check         # astro check (型チェック)
 
 - `README.md`: 機能・運用の概要
 - `AGENTS.md`: コーディングスタイル / コンテンツルール / slug 規約 (このリポジトリで作業するエージェント向け)
-- `HANDOFF.md`: Quartz → Astro 移行時の引継ぎメモ (今後不要になったら消してよい)
