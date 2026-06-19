@@ -1296,18 +1296,11 @@ main.home {
 }
 
 .memo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 0.6rem;
-  row-gap: 0;
-}
-
-.memo > * {
-  grid-column: 1 / -1;
 }
 
 .memo h2 {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1316,7 +1309,6 @@ main.home {
   padding: 0 0 0.35rem;
   border: 0;
   border-bottom: 2px solid var(--accent);
-  justify-self: start;
   scroll-margin-top: 1rem;
 }
 
@@ -1376,24 +1368,139 @@ main.home {
   margin: 0.5rem 0 1rem;
 }
 
-.memo p:has(> img:only-child) {
-  grid-column: auto;
-  margin: 0 0 0.6rem;
+/* memo 本文のノート（ネスト対応） */
+.memo ul.notes {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75rem;
+}
+.memo ul.notes > li {
+  position: relative;
+  padding: 0.18rem 0 0.18rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.memo ul.notes > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+}
+.memo ul.notes > li:has(> ul),
+.memo ul.notes > li:has(> ol) {
+  padding-left: 0;
+  margin-top: 0.6rem;
+}
+.memo ul.notes > li:has(> ul)::before,
+.memo ul.notes > li:has(> ol)::before {
+  display: none;
+}
+.memo ul.notes > li > .parent {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.memo ul.notes ul,
+.memo ul.notes ol {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.3rem 0 0.2rem;
+  border-left: 2px solid var(--line);
+}
+.memo ul.notes ul li,
+.memo ul.notes ol li {
+  position: relative;
+  padding: 0.15rem 0 0.15rem 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.memo ul.notes ul li::before,
+.memo ul.notes ol li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent-soft);
 }
 
-.memo p:has(> img:only-child) img {
-  margin: 0;
+/* 写真ギャラリー */
+.memo-gallery__label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.75rem 0 0.85rem;
+}
+.memo-gallery__label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.memo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+.memo-gallery img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: 6px;
   display: block;
+  background: var(--highlight);
+  margin: 0;
 }
 
 @media (max-width: 540px) {
-  .memo p:has(> img:only-child) img {
-    height: 160px;
-  }
+  .memo-gallery { grid-template-columns: 1fr; }
+  .memo-gallery img { height: 200px; }
+}
+
+/* 部屋情報テーブル */
+.info-table {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 0 0 1.75rem;
+  background: #fff;
+}
+.info-table .row {
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.info-table .row:last-child { border-bottom: 0; }
+.info-table .k {
+  background: var(--highlight);
+  padding: 0.5rem 0.85rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.info-table .v {
+  padding: 0.5rem 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.info-table .v a { word-break: break-all; }
+
+@media (max-width: 540px) {
+  .info-table .row { grid-template-columns: 5.5em 1fr; }
 }
 
 /* --- lightbox --- */
