@@ -288,7 +288,7 @@ const ogImage =
       const nextBtn = dialog?.querySelector(".lightbox__next") as HTMLButtonElement | null
       const closeBtn = dialog?.querySelector(".lightbox__close") as HTMLButtonElement | null
       if (memo && dialog && dialogImg && prevBtn && nextBtn && closeBtn) {
-        const imgs = Array.from(memo.querySelectorAll("p > img")) as HTMLImageElement[]
+        const imgs = Array.from(memo.querySelectorAll("p > img, .memo-gallery > img")) as HTMLImageElement[]
         let index = 0
         const show = (i: number) => {
           index = (i + imgs.length) % imgs.length
