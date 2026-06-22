@@ -12,7 +12,7 @@ og_cover: /images/2025/11/hilton-seahawk-panoramic-IMG_8009.jpg
 - ベッド: キング 180×200cm（1台）
 - 利用人数: 1～2名
 - 喫煙/禁煙: 禁煙
-- 備考: オーシャンビュー/シティビューの構成あり
+- 備考: 全室先端に位置し、オーシャンビュー・シティビューの両方が見える
 - 参照元: https://fukuokaseahawk.hiltonjapan.co.jp/rooms/panoramic （取得日: 2025-09-07）
 
 ---
