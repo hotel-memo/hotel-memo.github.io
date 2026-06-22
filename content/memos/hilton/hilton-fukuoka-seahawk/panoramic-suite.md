@@ -33,6 +33,8 @@ og_cover: /images/2025/11/hilton-seahawk-panoramic-IMG_8009.jpg
 
 ![](/images/2025/11/hilton-seahawk-panoramic-IMG_8010.jpg)
 
+![](/images/2025/11/IMG_8108.jpg)
+
 ---
 
 ## 2027号室
