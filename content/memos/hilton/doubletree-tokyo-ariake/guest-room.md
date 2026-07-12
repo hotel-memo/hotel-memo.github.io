@@ -1,40 +1,24 @@
 ---
 title: ダブルツリーbyヒルトン東京有明 ゲストルーム
 rating: 5
-stayed_at: 2025-11-17
+stayed_at: 2026-07-12
 cover: /images/2025/11/doubletree-ariake-1306-IMG_8122.jpg
 og_cover: /images/2025/11/doubletree-ariake-1306-IMG_8125.jpg
 ---
 
 ## パソコン作業の快適さ
 
-## 部屋番号失念
-
-2025/11/17-20
-
 ## 部屋情報（公式サイトより）
 - 面積: 22㎡
 - ベッド: クイーン 154×203cm（1台）
 - 利用人数: 2名
 - 喫煙/禁煙: 禁煙
-- 階層: 4～13階（今回は13階・1306号室）
+- 階層: 4～13階
 - 参照元: https://doubletree-tokyo-ariake.hiltonjapan.co.jp/rooms/queen-guest-room （取得日: 2025-11-17）
 
 ## ホテル情報
 - 2024年12月20日開業
 - ダイワロイネットホテル東京有明のリブランド
-
-## 写真
-
-![](/images/2025/11/doubletree-ariake-1306-IMG_8122.jpg)
-
-![](/images/2025/11/doubletree-ariake-1306-IMG_8123.jpg)
-
-![](/images/2025/11/doubletree-ariake-1306-IMG_8124.jpg)
-
-![](/images/2025/11/doubletree-ariake-1306-IMG_8125.jpg)
-
-![](/images/2025/11/doubletree-ariake-1306-IMG_8126.jpg)
 
 ## 部屋の設備・特徴
 - **ワークチェア**: オカムラのmode（全室配備）
@@ -67,3 +51,47 @@ og_cover: /images/2025/11/doubletree-ariake-1306-IMG_8125.jpg
 - 13階で眺望も良好
 - 快適に仕事ができる環境として高評価
 - リーズナブルな価格でヒルトンオナーズのステータス特典を享受できる
+
+## 1219号室
+
+2026/7/9-12
+
+- 3泊だが、2泊目からはアップグレードで[デラックスルーム（シングルベッド2台、上層階）](../deluxe-twin-high-floor.md)に部屋変更
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8877.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8878.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8879.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8880.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8881.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8882.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8883.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8884.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8885.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8886.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8887.jpg)
+
+![](/images/2026/07/doubletree-ariake-1219-IMG_8890.jpg)
+
+## 部屋番号失念
+
+2025/11/17-20
+
+![](/images/2025/11/doubletree-ariake-1306-IMG_8122.jpg)
+
+![](/images/2025/11/doubletree-ariake-1306-IMG_8123.jpg)
+
+![](/images/2025/11/doubletree-ariake-1306-IMG_8124.jpg)
+
+![](/images/2025/11/doubletree-ariake-1306-IMG_8125.jpg)
+
+![](/images/2025/11/doubletree-ariake-1306-IMG_8126.jpg)
