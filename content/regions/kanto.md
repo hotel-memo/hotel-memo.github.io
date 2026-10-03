@@ -77,6 +77,7 @@ order: 3
 
 - **椅子**: 客室写真にワークチェアらしき椅子（スタンダードダブルのデスクタイプ、製品名不明）
 - **公式**: [daiwaroynet.jp/shinbashi](https://www.daiwaroynet.jp/shinbashi/)
+- **メモ**: [宿泊メモを読む →](/memos/daiwa-roynet/daiwa-roynet-shinbashi/compact-twin/)（コンパクトツインはワークチェアなし）
 
 ### ザ・ゲートホテル東京
 

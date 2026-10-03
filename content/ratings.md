@@ -22,6 +22,7 @@
 
 ## ★★☆☆☆ <small class="cap">下</small>
 
+ - [ダイワロイネットホテル新橋／コンパクトツイン](/memos/daiwa-roynet/daiwa-roynet-shinbashi/compact-twin/)
  - [羽田エクセルホテル東急／スーペリアシングル](/memos/tokyu/haneda-excel/superior-single/)
  - [ROKU KYOTO, LXR Hotels & Resorts／プールサイドテラス](/memos/hilton/roku-kyoto/poolside-terrace/)
  - [ダイワロイネットホテル小倉駅前／スーペリアダブル](/memos/daiwa-roynet/daiwa-roynet-kokura/superior-double/)
