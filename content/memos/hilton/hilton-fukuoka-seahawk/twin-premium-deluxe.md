@@ -1,7 +1,7 @@
 ---
 title: ヒルトン福岡シーホーク ツインプレミアムデラックス
 rating: 5
-stayed_at: 2026-06-18
+stayed_at: 2026-10-08
 cover: /images/2025/09/hilton-seahawk-1728-IMG_7801.jpg
 og_cover: /images/2025/09/hilton-seahawk-1728-IMG_7802.jpg
 ---
@@ -17,6 +17,35 @@ og_cover: /images/2025/09/hilton-seahawk-1728-IMG_7802.jpg
 - 喫煙/禁煙: 禁煙
 - 備考: 高層階（17～29F）に位置
 - 参照元: https://fukuokaseahawk.hiltonjapan.co.jp/rooms/twin_premium_deluxe （取得日: 2025-09-07）
+
+----
+
+## 2728号室
+
+2026/10/8-10
+
+- ヒルトンダブルからのアップグレード
+- eStandby Upgradeでエグゼクティブデラックスツインを申し込んでいたが、デジタルチェックイン済みだったせいか、チェックイン時に特に言及なし
+- フロアに自販機あり
+- 備え付けの加湿空気清浄機はないはずの部屋タイプだが、設置してあった（おそらく以前除湿機について問い合わせた関係）
+	- 加湿空気清浄機がデスクのひとつだけのコンセントを占領していたので、延長タップを持参してよかった
+- 2826・2028・1728号室と同タイプのため部屋の写真はなし
+
+![](/images/2026/10/IMG_9079.jpg)
+
+![](/images/2026/10/IMG_9080.jpg)
+
+![](/images/2026/10/IMG_9081.jpg)
+
+![](/images/2026/10/IMG_9082.jpg)
+
+![](/images/2026/10/IMG_9083.jpg)
+
+![](/images/2026/10/IMG_9091.jpg)
+
+![](/images/2026/10/IMG_9092.jpg)
+
+![](/images/2026/10/IMG_9096.jpg)
 
 ----
 
