@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content"
 import Base from "../../layouts/Base.astro"
+import { parseStayRange } from "../../lib/rehype-stay-date.mjs"
 import {
   byStayedAtDesc,
   chainNameMap,
@@ -126,6 +127,16 @@ if (kind === "memo") {
   totalStays = Math.max(stayJumps.length, 1)
 }
 
+// 最新の宿泊 (本文先頭の部屋見出し直下の日付段落) を期間・泊数付きで表示する
+let latestStay: { start: string; end: string | null; nights: number } | null =
+  null
+if (kind === "memo") {
+  const lines = entry.body?.split("\n") ?? []
+  const i = lines.findIndex((l) => /^##\s+(.+号室|部屋番号失念)\s*$/.test(l))
+  const dateLine = i >= 0 ? lines.slice(i + 1).find((l) => l.trim()) : undefined
+  latestStay = dateLine ? parseStayRange(dateLine) : null
+}
+
 const ogImage =
   kind === "memo"
     ? `/og/memos/${entry.id.replace(/^memos\//, "")}.png`
@@ -169,7 +180,9 @@ const ogImage =
             {(entry as any).data.stayed_at && (
               <span>
                 <span class="label">{totalStays > 1 ? "最新" : "宿泊"}</span>
-                {formatYMD((entry as any).data.stayed_at)}
+                {latestStay
+                  ? `${latestStay.start}${latestStay.end ? ` — ${latestStay.end}` : ""}${latestStay.nights > 0 ? ` · ${latestStay.nights}泊` : ""}`
+                  : formatYMD((entry as any).data.stayed_at)}
               </span>
             )}
             {totalStays > 1 && (
