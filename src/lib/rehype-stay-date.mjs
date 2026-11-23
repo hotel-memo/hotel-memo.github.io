@@ -54,7 +54,7 @@ function asArray(v) {
   return Array.isArray(v) ? v : v ? [v] : []
 }
 
-function parseStayRange(s) {
+export function parseStayRange(s) {
   s = s.trim()
   let m = s.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/)
   if (m) {
