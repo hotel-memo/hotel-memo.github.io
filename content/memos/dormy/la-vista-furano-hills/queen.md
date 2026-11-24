@@ -10,6 +10,7 @@ og_cover: /images/2026/11/la-vista-furano-hills-317-IMG_9233.jpg
 
 - 椅子や机がいまいち
 - WiFiは下り64.9Mbps・上り80.5Mbps
+- ホテルのWiFiからは自宅へのL2TP/IPsec VPNがつながらなかった（モバイル回線からはつながった。原因は未確定）
 
 ## 部屋情報（公式サイトより）
 
